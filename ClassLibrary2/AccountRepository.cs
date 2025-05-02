@@ -3,37 +3,69 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace ClassLibrary2
 {
     public class AccountRepository
     {
-        private Account[] accounts;
-
-        public AccountRepository()
-        {
-            InitializeAccounts();
-        }
-
-        private void InitializeAccounts()
-        {
-            accounts = new Account[]
-            {
-                new Account("4149567890748296", "1234", "Andrew", "Symon", "ipz235_sag@student.ztu.edu.ua", "+380983279051", 10000.00, 5000.00),
-                new Account("4149647389054789", "4321", "Oleksandr", "Pavlov", "ipz234_poo@student.ztu.edu.ua", "+380679806545", 5437.50, 3000.00),
-                new Account("4149769307893260", "6782", "John", "Jackson", "jackson@gmail.com", "+380982789067", 1234.90, 2000.00),
-                new Account("4149768990237685", "8900", "James", "Himm", "himm@gmail.com", "+380689066478", 8789.50, 8000.00),
-                new Account("4149879076774893", "9212", "Tommy", "Ram", "ramtom@gmail.com", "+380986789045", 6550.29, 2000.00)
-            };
-        }
+        private readonly string connectionString = "Server=DESKTOP-PVSCHEE;Database=ATMDatabase;Trusted_Connection=True;";
 
         public Account GetAccount(string cardNumber, string cardPIN)
         {
-            return accounts.FirstOrDefault(acc => acc.CardNumber == cardNumber && acc.CardPIN == cardPIN);
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                var command = new SqlCommand("SELECT * FROM Accounts WHERE CardNumber = @cardNumber AND CardPIN = @cardPIN", connection);
+                command.Parameters.AddWithValue("@cardNumber", cardNumber);
+                command.Parameters.AddWithValue("@cardPIN", cardPIN);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return new Account(
+                            reader["CardNumber"].ToString(),
+                            reader["CardPIN"].ToString(),
+                            reader["FirstName"].ToString(),
+                            reader["LastName"].ToString(),
+                            reader["Email"].ToString(),
+                            reader["Phone"].ToString(),
+                            Convert.ToDouble(reader["Balance"]),
+                            Convert.ToDouble(reader["MaxDepositLimit"])
+                        );
+                    }
+                }
+            }
+            return null;
         }
+
         public Account GetAccountByCardNumber(string cardNumber)
         {
-            return accounts.FirstOrDefault(acc => acc.CardNumber == cardNumber);
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                var command = new SqlCommand("SELECT * FROM Accounts WHERE CardNumber = @cardNumber", connection);
+                command.Parameters.AddWithValue("@cardNumber", cardNumber);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return new Account(
+                            reader["CardNumber"].ToString(),
+                            reader["CardPIN"].ToString(),
+                            reader["FirstName"].ToString(),
+                            reader["LastName"].ToString(),
+                            reader["Email"].ToString(),
+                            reader["Phone"].ToString(),
+                            Convert.ToDouble(reader["Balance"]),
+                            Convert.ToDouble(reader["MaxDepositLimit"])
+                        );
+                    }
+                }
+            }
+            return null;
         }
     }
 }
