@@ -67,5 +67,60 @@ namespace ClassLibrary2
             }
             return null;
         }
+        public bool AddAccount(Account account)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                var command = new SqlCommand(
+                    "INSERT INTO Accounts (CardNumber, CardPIN, FirstName, LastName, Email, Phone, Balance, MaxDepositLimit) " +
+                    "VALUES (@CardNumber, @CardPIN, @FirstName, @LastName, @Email, @Phone, @Balance, @MaxDepositLimit)", connection);
+
+                command.Parameters.AddWithValue("@CardNumber", account.CardNumber);
+                command.Parameters.AddWithValue("@CardPIN", account.CardPIN);
+                command.Parameters.AddWithValue("@FirstName", account.FirstName);
+                command.Parameters.AddWithValue("@LastName", account.LastName);
+                command.Parameters.AddWithValue("@Email", account.Email);
+                command.Parameters.AddWithValue("@Phone", account.Phone);
+                command.Parameters.AddWithValue("@Balance", account.Balance);
+                command.Parameters.AddWithValue("@MaxDepositLimit", account.MaxDepositLimit);
+
+                return command.ExecuteNonQuery() > 0;
+            }
+        }
+
+        public bool UpdateAccount(Account account)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                var command = new SqlCommand(
+                    "UPDATE Accounts SET CardPIN = @CardPIN, FirstName = @FirstName, LastName = @LastName, Email = @Email, Phone = @Phone, " +
+                    "Balance = @Balance, MaxDepositLimit = @MaxDepositLimit WHERE CardNumber = @CardNumber", connection);
+
+                command.Parameters.AddWithValue("@CardNumber", account.CardNumber);
+                command.Parameters.AddWithValue("@CardPIN", account.CardPIN);
+                command.Parameters.AddWithValue("@FirstName", account.FirstName);
+                command.Parameters.AddWithValue("@LastName", account.LastName);
+                command.Parameters.AddWithValue("@Email", account.Email);
+                command.Parameters.AddWithValue("@Phone", account.Phone);
+                command.Parameters.AddWithValue("@Balance", account.Balance);
+                command.Parameters.AddWithValue("@MaxDepositLimit", account.MaxDepositLimit);
+
+                return command.ExecuteNonQuery() > 0;
+            }
+        }
+
+        public bool DeleteAccount(string cardNumber)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                var command = new SqlCommand("DELETE FROM Accounts WHERE CardNumber = @CardNumber", connection);
+                command.Parameters.AddWithValue("@CardNumber", cardNumber);
+                return command.ExecuteNonQuery() > 0;
+            }
+        }
+
     }
 }
