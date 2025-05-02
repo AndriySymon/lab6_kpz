@@ -36,6 +36,7 @@
             this.txtCardPIN = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAuthorize = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -113,11 +114,23 @@
             this.btnAuthorize.UseVisualStyleBackColor = false;
             this.btnAuthorize.Click += new System.EventHandler(this.btnAuthorize_Click);
             // 
+            // btnRegister
+            // 
+            this.btnRegister.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRegister.Location = new System.Drawing.Point(15, 300);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(255, 23);
+            this.btnRegister.TabIndex = 9;
+            this.btnRegister.Text = "Зареєструватися у систему";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
             // AuthorizationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 303);
+            this.ClientSize = new System.Drawing.Size(282, 357);
+            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnAuthorize);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtCardPIN);
@@ -145,6 +158,7 @@
         private System.Windows.Forms.TextBox txtCardPIN;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAuthorize;
+        private System.Windows.Forms.Button btnRegister;
     }
 }
 

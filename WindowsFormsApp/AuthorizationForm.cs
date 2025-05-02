@@ -66,5 +66,14 @@ namespace WindowsFormsApp
                 MessageBox.Show("Користувача не знайдено. Невірний PIN або номер картки.");
             }
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            var registerForm = new RegisterForm();
+            registerForm.StartPosition = FormStartPosition.CenterScreen;
+            this.Hide();
+            registerForm.ShowDialog();
+            this.Show();
+        }
     }
 }
