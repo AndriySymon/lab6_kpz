@@ -16,9 +16,11 @@ namespace WindowsFormsApp
         private Account account;
         private Account[] accounts;
         private AccountRepository accountRepository;
+        private Account currentAccount;
         public AutomatedTellerMachineForm( Account account)
         {
             InitializeComponent();
+            currentAccount = account;
             InitializeBlinkingLabel();
 
             this.account = account;
@@ -44,6 +46,9 @@ namespace WindowsFormsApp
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+            AuthorizationForm loginForm = new AuthorizationForm();
+            loginForm.StartPosition = FormStartPosition.CenterScreen;
+            loginForm.Show();
         }
 
         private void btnTransfer_Click(object sender, EventArgs e)
@@ -140,6 +145,12 @@ namespace WindowsFormsApp
         {
             double availableDeposit = account.MaxDepositLimit;
             MessageBox.Show($"Доступна сума для зняття з депозиту: {availableDeposit} грн");
+        }
+
+        private void btnManageAccounts_Click(object sender, EventArgs e)
+        {
+            var manageForm = new AccountManagementForm(currentAccount);
+            manageForm.ShowDialog();
         }
     }
 }

@@ -44,6 +44,7 @@
             this.btnTransfer = new System.Windows.Forms.Button();
             this.attention = new System.Windows.Forms.Label();
             this.btnCheckDeposit = new System.Windows.Forms.Button();
+            this.btnManageAccounts = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -93,7 +94,7 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(130, 41);
             this.btnClose.TabIndex = 4;
-            this.btnClose.Text = "Закрити";
+            this.btnClose.Text = "Вихід з акаунту";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -181,7 +182,7 @@
             // 
             this.attention.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.attention.ForeColor = System.Drawing.Color.IndianRed;
-            this.attention.Location = new System.Drawing.Point(437, 117);
+            this.attention.Location = new System.Drawing.Point(437, 148);
             this.attention.Name = "attention";
             this.attention.Size = new System.Drawing.Size(342, 111);
             this.attention.TabIndex = 15;
@@ -199,12 +200,24 @@
             this.btnCheckDeposit.UseVisualStyleBackColor = true;
             this.btnCheckDeposit.Click += new System.EventHandler(this.btnCheckDeposit_Click);
             // 
+            // btnManageAccounts
+            // 
+            this.btnManageAccounts.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnManageAccounts.Location = new System.Drawing.Point(630, 59);
+            this.btnManageAccounts.Name = "btnManageAccounts";
+            this.btnManageAccounts.Size = new System.Drawing.Size(158, 45);
+            this.btnManageAccounts.TabIndex = 17;
+            this.btnManageAccounts.Text = "Управління акаунтом";
+            this.btnManageAccounts.UseVisualStyleBackColor = false;
+            this.btnManageAccounts.Click += new System.EventHandler(this.btnManageAccounts_Click);
+            // 
             // AutomatedTellerMachineForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnManageAccounts);
             this.Controls.Add(this.btnCheckDeposit);
             this.Controls.Add(this.attention);
             this.Controls.Add(this.btnTransfer);
@@ -248,5 +261,6 @@
         private System.Windows.Forms.Button btnTransfer;
         private System.Windows.Forms.Label attention;
         private System.Windows.Forms.Button btnCheckDeposit;
+        private System.Windows.Forms.Button btnManageAccounts;
     }
 }

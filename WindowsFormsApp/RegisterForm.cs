@@ -52,14 +52,24 @@ namespace WindowsFormsApp
             0.0
             );
             if (repo.AddAccount(account))
+            {
                 MessageBox.Show(
                     "Акаунт успішно створено! Ваш згенерований номер картки:\n" + generatedCardNumber +
-                    "\n\nЩоб отримати фізичну картку, зверніться у найближче відділення банку.",
+                    "\n\nЩоб отримати фізичну картку, зверніться у найближче відділення банку." +
+                    "\n\nКартка автоматично з'явиться у вашому додатку Приватбанку. Дякую, що обрали нас!",
                     "Номер картки",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
+
+                this.Hide();
+                AuthorizationForm loginForm = new AuthorizationForm();
+                loginForm.StartPosition = FormStartPosition.CenterScreen;
+                loginForm.Show();
+            }
             else
+            {
                 MessageBox.Show("Помилка при створенні акаунту");
+            }
         }
 
         private void btnBackToLogin_Click(object sender, EventArgs e)

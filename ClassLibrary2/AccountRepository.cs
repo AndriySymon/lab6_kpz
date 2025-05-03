@@ -89,24 +89,16 @@ namespace ClassLibrary2
             }
         }
 
-        public bool UpdateAccount(Account account)
+        public bool UpdateAccount(Account acc)
         {
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                var command = new SqlCommand(
-                    "UPDATE Accounts SET CardPIN = @CardPIN, FirstName = @FirstName, LastName = @LastName, Email = @Email, Phone = @Phone, " +
-                    "Balance = @Balance, MaxDepositLimit = @MaxDepositLimit WHERE CardNumber = @CardNumber", connection);
-
-                command.Parameters.AddWithValue("@CardNumber", account.CardNumber);
-                command.Parameters.AddWithValue("@CardPIN", account.CardPIN);
-                command.Parameters.AddWithValue("@FirstName", account.FirstName);
-                command.Parameters.AddWithValue("@LastName", account.LastName);
-                command.Parameters.AddWithValue("@Email", account.Email);
-                command.Parameters.AddWithValue("@Phone", account.Phone);
-                command.Parameters.AddWithValue("@Balance", account.Balance);
-                command.Parameters.AddWithValue("@MaxDepositLimit", account.MaxDepositLimit);
-
+                var command = new SqlCommand("UPDATE Accounts SET FirstName = @fn, LastName = @ln, Phone = @ph WHERE CardNumber = @cn", connection);
+                command.Parameters.AddWithValue("@fn", acc.FirstName);
+                command.Parameters.AddWithValue("@ln", acc.LastName);
+                command.Parameters.AddWithValue("@ph", acc.Phone);
+                command.Parameters.AddWithValue("@cn", acc.CardNumber);
                 return command.ExecuteNonQuery() > 0;
             }
         }
@@ -116,8 +108,8 @@ namespace ClassLibrary2
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                var command = new SqlCommand("DELETE FROM Accounts WHERE CardNumber = @CardNumber", connection);
-                command.Parameters.AddWithValue("@CardNumber", cardNumber);
+                var command = new SqlCommand("DELETE FROM Accounts WHERE CardNumber = @cn", connection);
+                command.Parameters.AddWithValue("@cn", cardNumber);
                 return command.ExecuteNonQuery() > 0;
             }
         }
