@@ -80,8 +80,32 @@ namespace WindowsFormsApp
         {
             if (double.TryParse(txtWithdrawAmount.Text, out double withdrawAmount))
             {
-                account.Withdraw(withdrawAmount);
-                txtWithdrawAmount.Clear();
+                if (withdrawAmount <= 0)
+                {
+                    MessageBox.Show("Сума повинна бути більшою за 0.");
+                    return;
+                }
+
+                if (withdrawAmount > account.Balance)
+                {
+                    MessageBox.Show("На рахунку недостатньо коштів.");
+                    return;
+                }
+
+                account.Balance -= withdrawAmount;
+
+                AccountRepository repo = new AccountRepository();
+                bool updated = repo.UpdateAccount(account);
+
+                if (updated)
+                {
+                    MessageBox.Show("Готівку знято. Новий баланс: " + account.Balance.ToString("0.00"));
+                    txtWithdrawAmount.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("Помилка при оновленні балансу.");
+                }
             }
             else
             {

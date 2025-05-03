@@ -24,7 +24,7 @@ namespace ClassLibrary2
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
-        public double Balance { get; private set; }
+        public double Balance { get; set; }
         public double MaxDepositLimit { get; set; }
         public bool HasWithdrawnDeposit { get; private set; } = false;
 

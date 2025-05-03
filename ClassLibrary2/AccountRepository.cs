@@ -94,10 +94,11 @@ namespace ClassLibrary2
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                var command = new SqlCommand("UPDATE Accounts SET FirstName = @fn, LastName = @ln, Phone = @ph WHERE CardNumber = @cn", connection);
+                var command = new SqlCommand("UPDATE Accounts SET FirstName = @fn, Balance = @bal, LastName = @ln, Phone = @ph WHERE CardNumber = @cn", connection);
                 command.Parameters.AddWithValue("@fn", acc.FirstName);
                 command.Parameters.AddWithValue("@ln", acc.LastName);
                 command.Parameters.AddWithValue("@ph", acc.Phone);
+                command.Parameters.AddWithValue("@bal", acc.Balance);
                 command.Parameters.AddWithValue("@cn", acc.CardNumber);
                 return command.ExecuteNonQuery() > 0;
             }

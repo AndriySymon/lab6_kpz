@@ -39,6 +39,15 @@ namespace WindowsFormsApp
 
         private void btnCreateAccount_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtCardPIN.Text) ||
+                string.IsNullOrWhiteSpace(txtFirstName.Text) ||
+                string.IsNullOrWhiteSpace(txtLastName.Text) ||
+                string.IsNullOrWhiteSpace(txtEmail.Text) ||
+                string.IsNullOrWhiteSpace(txtPhone.Text))
+            {
+                MessageBox.Show("Будь ласка, заповніть усі поля!", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             var repo = new AccountRepository();
 
             var account = new Account(
