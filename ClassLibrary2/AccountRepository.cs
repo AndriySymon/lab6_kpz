@@ -90,7 +90,7 @@ namespace ClassLibrary2
         }
 
         public bool UpdateAccount(Account acc)
-        {
+    {
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();

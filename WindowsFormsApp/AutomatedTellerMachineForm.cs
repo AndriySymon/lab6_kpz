@@ -17,6 +17,9 @@ namespace WindowsFormsApp
         private Account[] accounts;
         private AccountRepository accountRepository;
         private Account currentAccount;
+
+        private double pendingDepositAmount = 0.0;
+        private bool awaitingCash = false;
         public AutomatedTellerMachineForm( Account account)
         {
             InitializeComponent();
@@ -35,7 +38,8 @@ namespace WindowsFormsApp
 
         private void AutomatedTellerMachineForm_Load(object sender, EventArgs e)
         {
-
+            this.KeyPreview = true;
+            this.KeyDown += AutomatedTellerMachineForm_KeyDown;
         }
 
         private void btnCheckBalance_Click(object sender, EventArgs e)
@@ -113,23 +117,6 @@ namespace WindowsFormsApp
             }
         }
 
-        private void btnDeposit_Click(object sender, EventArgs e)
-        {
-            account.Put();
-            if (account.MaxDepositLimit > 0 && !account.HasWithdrawnDeposit)
-            {
-                DialogResult dialogResult = MessageBox.Show($"Ви впевнені, що хочете зняти {account.MaxDepositLimit} грн з депозиту?", "Підтвердження зняття", MessageBoxButtons.YesNo);
-
-                if (dialogResult == DialogResult.Yes)
-                {
-                    account.ConfirmWithdrawDeposit();
-                }
-                else
-                {
-                    MessageBox.Show("Зняття депозиту скасовано.");
-                }
-            }
-        }
         private void OnCheckedBalance(object sender, AccountEventArgs e)
         {
             MessageBox.Show(e.Message); 
@@ -165,16 +152,68 @@ namespace WindowsFormsApp
             attention.Visible = isLabelVisible;
         }
 
-        private void btnCheckDeposit_Click(object sender, EventArgs e)
-        {
-            double availableDeposit = account.MaxDepositLimit;
-            MessageBox.Show($"Доступна сума для зняття з депозиту: {availableDeposit} грн");
-        }
-
         private void btnManageAccounts_Click(object sender, EventArgs e)
         {
             var manageForm = new AccountManagementForm(currentAccount);
             manageForm.ShowDialog();
+        }
+
+        private void attention_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCash_Click(object sender, EventArgs e)
+        {
+            if (double.TryParse(txtCashAmount.Text, out double amount) && amount > 0)
+            {
+                pendingDepositAmount = amount;
+                awaitingCash = true;
+                MessageBox.Show("Очікування прийняття готівки. Натисніть клавішу 'M' після внесення готівки.",
+                    "Поповнення", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Введіть коректну суму для поповнення.");
+            }
+        }
+
+        private void txtCashAmount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCashAmount_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void AutomatedTellerMachineForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.M && awaitingCash)
+            {
+                account.Balance += pendingDepositAmount;
+
+                var repo = new AccountRepository();
+                if (repo.UpdateAccount(account))
+                {
+                    MessageBox.Show("Кошти успішно зараховано. Новий баланс: " + account.Balance.ToString("0.00"),
+                        "Успішно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtCashAmount.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("Помилка при оновленні балансу.");
+                }
+
+                awaitingCash = false;
+                pendingDepositAmount = 0.0;
+            }
         }
     }
 }

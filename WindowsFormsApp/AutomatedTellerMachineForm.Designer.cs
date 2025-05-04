@@ -39,12 +39,13 @@
             this.txtWithdrawAmount = new System.Windows.Forms.TextBox();
             this.txtTransferAmount = new System.Windows.Forms.TextBox();
             this.txtTransferCardNumber = new System.Windows.Forms.TextBox();
-            this.btnDeposit = new System.Windows.Forms.Button();
             this.btnWithdraw = new System.Windows.Forms.Button();
             this.btnTransfer = new System.Windows.Forms.Button();
             this.attention = new System.Windows.Forms.Label();
-            this.btnCheckDeposit = new System.Windows.Forms.Button();
             this.btnManageAccounts = new System.Windows.Forms.Button();
+            this.txtCashAmount = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnCash = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -148,16 +149,6 @@
             this.txtTransferCardNumber.Size = new System.Drawing.Size(215, 22);
             this.txtTransferCardNumber.TabIndex = 11;
             // 
-            // btnDeposit
-            // 
-            this.btnDeposit.Location = new System.Drawing.Point(12, 401);
-            this.btnDeposit.Name = "btnDeposit";
-            this.btnDeposit.Size = new System.Drawing.Size(199, 23);
-            this.btnDeposit.TabIndex = 12;
-            this.btnDeposit.Text = "Зняти депозит";
-            this.btnDeposit.UseVisualStyleBackColor = true;
-            this.btnDeposit.Click += new System.EventHandler(this.btnDeposit_Click);
-            // 
             // btnWithdraw
             // 
             this.btnWithdraw.Location = new System.Drawing.Point(324, 401);
@@ -182,23 +173,13 @@
             // 
             this.attention.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.attention.ForeColor = System.Drawing.Color.IndianRed;
-            this.attention.Location = new System.Drawing.Point(437, 148);
+            this.attention.Location = new System.Drawing.Point(446, 148);
             this.attention.Name = "attention";
             this.attention.Size = new System.Drawing.Size(342, 111);
             this.attention.TabIndex = 15;
-            this.attention.Text = "Увага! У банкоматах \"PrivatBank\" можливо зарахувати на вашу картку тільки повну с" +
-    "уму вашого депозиту. Для зарахування меншої суми, зверніться у найближче відділе" +
-    "ння";
-            // 
-            // btnCheckDeposit
-            // 
-            this.btnCheckDeposit.Location = new System.Drawing.Point(12, 336);
-            this.btnCheckDeposit.Name = "btnCheckDeposit";
-            this.btnCheckDeposit.Size = new System.Drawing.Size(199, 59);
-            this.btnCheckDeposit.TabIndex = 16;
-            this.btnCheckDeposit.Text = "Сума депозиту, яку ви можете зняти";
-            this.btnCheckDeposit.UseVisualStyleBackColor = true;
-            this.btnCheckDeposit.Click += new System.EventHandler(this.btnCheckDeposit_Click);
+            this.attention.Text = "Увага! У банкоматах \"PrivatBank\" неможливе зарахування вашого депозиту. Для зарах" +
+    "ування суми, зверніться у найближче відділення";
+            this.attention.Click += new System.EventHandler(this.attention_Click);
             // 
             // btnManageAccounts
             // 
@@ -211,18 +192,48 @@
             this.btnManageAccounts.UseVisualStyleBackColor = false;
             this.btnManageAccounts.Click += new System.EventHandler(this.btnManageAccounts_Click);
             // 
+            // txtCashAmount
+            // 
+            this.txtCashAmount.Location = new System.Drawing.Point(35, 373);
+            this.txtCashAmount.Name = "txtCashAmount";
+            this.txtCashAmount.Size = new System.Drawing.Size(136, 22);
+            this.txtCashAmount.TabIndex = 18;
+            this.txtCashAmount.TextChanged += new System.EventHandler(this.txtCashAmount_TextChanged);
+            this.txtCashAmount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCashAmount_KeyDown);
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(31, 322);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(185, 49);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Введіть суму для поповнення";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // btnCash
+            // 
+            this.btnCash.Location = new System.Drawing.Point(35, 401);
+            this.btnCash.Name = "btnCash";
+            this.btnCash.Size = new System.Drawing.Size(136, 23);
+            this.btnCash.TabIndex = 20;
+            this.btnCash.Text = "Поповнити картку";
+            this.btnCash.UseVisualStyleBackColor = true;
+            this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
+            // 
             // AutomatedTellerMachineForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCash);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtCashAmount);
             this.Controls.Add(this.btnManageAccounts);
-            this.Controls.Add(this.btnCheckDeposit);
             this.Controls.Add(this.attention);
             this.Controls.Add(this.btnTransfer);
             this.Controls.Add(this.btnWithdraw);
-            this.Controls.Add(this.btnDeposit);
             this.Controls.Add(this.txtTransferCardNumber);
             this.Controls.Add(this.txtTransferAmount);
             this.Controls.Add(this.txtWithdrawAmount);
@@ -238,6 +249,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AutomatedTellerMachineForm";
             this.Load += new System.EventHandler(this.AutomatedTellerMachineForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AutomatedTellerMachineForm_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,11 +268,12 @@
         private System.Windows.Forms.TextBox txtWithdrawAmount;
         private System.Windows.Forms.TextBox txtTransferAmount;
         private System.Windows.Forms.TextBox txtTransferCardNumber;
-        private System.Windows.Forms.Button btnDeposit;
         private System.Windows.Forms.Button btnWithdraw;
         private System.Windows.Forms.Button btnTransfer;
         private System.Windows.Forms.Label attention;
-        private System.Windows.Forms.Button btnCheckDeposit;
         private System.Windows.Forms.Button btnManageAccounts;
+        private System.Windows.Forms.TextBox txtCashAmount;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnCash;
     }
 }
