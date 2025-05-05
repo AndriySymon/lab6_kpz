@@ -57,17 +57,43 @@ namespace WindowsFormsApp
 
         private void btnTransfer_Click(object sender, EventArgs e)
         {
-            string targetCardNumber = txtTransferCardNumber.Text;
+            string targetCardNumber = txtTransferCardNumber.Text.Trim();
 
             if (double.TryParse(txtTransferAmount.Text, out double transferAmount))
             {
+                if (transferAmount <= 0)
+                {
+                    MessageBox.Show("Сума має бути більшою за 0.");
+                    return;
+                }
+
+                if (transferAmount > account.Balance)
+                {
+                    MessageBox.Show("Недостатньо коштів на рахунку.");
+                    return;
+                }
+
+                AccountRepository accountRepository = new AccountRepository();
                 Account targetAccount = accountRepository.GetAccountByCardNumber(targetCardNumber);
 
                 if (targetAccount != null)
                 {
-                    account.Transfer(transferAmount, targetAccount);
-                    txtTransferAmount.Clear();
-                    txtTransferCardNumber.Clear();
+                    account.Balance -= transferAmount;
+                    targetAccount.Balance += transferAmount;
+
+                    bool senderUpdated = accountRepository.UpdateAccount(account);
+                    bool receiverUpdated = accountRepository.UpdateAccount(targetAccount);
+
+                    if (senderUpdated && receiverUpdated)
+                    {
+                        MessageBox.Show("Переказ успішно виконано!");
+                        txtTransferAmount.Clear();
+                        txtTransferCardNumber.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Помилка при оновленні акаунтів.");
+                    }
                 }
                 else
                 {
