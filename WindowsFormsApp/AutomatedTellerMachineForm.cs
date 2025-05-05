@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary2;
+using ClassLibrary2.Handlers;
 using ClassLibrary2.Interfaces;
 
 namespace WindowsFormsApp
@@ -60,74 +61,65 @@ namespace WindowsFormsApp
         {
             string targetCardNumber = txtTransferCardNumber.Text.Trim();
 
-            if (double.TryParse(txtTransferAmount.Text, out double transferAmount))
+            if (!double.TryParse(txtTransferAmount.Text, out double transferAmount) || transferAmount <= 0)
             {
-                if (transferAmount <= 0)
+                MessageBox.Show("Введіть коректну суму більше 0.");
+                return;
+            }
+
+            IReadableAccount readableRepo = new AccountRepository();
+            IUpdatableAccount updatableRepo = new AccountRepository();
+
+            Account targetAccount = readableRepo.GetAccountByCardNumber(targetCardNumber);
+
+            var handler1 = new ReceiverExistsHandler();
+            var handler2 = new SufficientFundsHandler();
+            var handler3 = new TransferLimitHandler();
+
+            handler1.SetNext(handler2);
+            handler2.SetNext(handler3);
+
+            if (handler1.Handle(account, targetAccount, transferAmount))
+            {
+                account.Balance -= transferAmount;
+                targetAccount.Balance += transferAmount;
+
+                bool senderUpdated = updatableRepo.UpdateAccount(account);
+                bool receiverUpdated = updatableRepo.UpdateAccount(targetAccount);
+
+                if (senderUpdated && receiverUpdated)
                 {
-                    MessageBox.Show("Сума має бути більшою за 0.");
-                    return;
-                }
-
-                if (transferAmount > account.Balance)
-                {
-                    MessageBox.Show("Недостатньо коштів на рахунку.");
-                    return;
-                }
-
-                IReadableAccount readableRepo = new AccountRepository();
-                IUpdatableAccount updatableRepo = new AccountRepository();
-
-                Account targetAccount = readableRepo.GetAccountByCardNumber(targetCardNumber);
-
-                if (targetAccount != null)
-                {
-                    account.Balance -= transferAmount;
-                    targetAccount.Balance += transferAmount;
-
-                    bool senderUpdated = updatableRepo.UpdateAccount(account);
-                    bool receiverUpdated = updatableRepo.UpdateAccount(targetAccount);
-
-                    if (senderUpdated && receiverUpdated)
-                    {
-                        MessageBox.Show("Переказ успішно виконано!");
-                        txtTransferAmount.Clear();
-                        txtTransferCardNumber.Clear();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Помилка при оновленні акаунтів.");
-                    }
+                    MessageBox.Show("Переказ успішно виконано!");
+                    txtTransferAmount.Clear();
+                    txtTransferCardNumber.Clear();
                 }
                 else
                 {
-                    MessageBox.Show("Карта призначення не знайдена.");
+                    MessageBox.Show("Помилка при оновленні акаунтів.");
                 }
-            }
-            else
-            {
-                MessageBox.Show("Введіть коректну суму.");
             }
         }
 
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(txtWithdrawAmount.Text, out double withdrawAmount))
+            if (!double.TryParse(txtWithdrawAmount.Text, out double withdrawAmount))
             {
-                if (withdrawAmount <= 0)
-                {
-                    MessageBox.Show("Сума повинна бути більшою за 0.");
-                    return;
-                }
+                MessageBox.Show("Введіть коректну суму.");
+                return;
+            }
 
-                if (withdrawAmount > account.Balance)
-                {
-                    MessageBox.Show("На рахунку недостатньо коштів.");
-                    return;
-                }
+            var handler1 = new PositiveAmountHandler();
+            var handler2 = new SufficientBalanceHandler();
+            var handler3 = new WithdrawLimitHandler();
 
+            handler1.SetNext(handler2);
+            handler2.SetNext(handler3);
+
+            if (handler1.Handle(account, withdrawAmount))
+            {
                 account.Balance -= withdrawAmount;
 
-                AccountRepository repo = new AccountRepository();
+                IUpdatableAccount repo = new AccountRepository();
                 bool updated = repo.UpdateAccount(account);
 
                 if (updated)
@@ -139,10 +131,6 @@ namespace WindowsFormsApp
                 {
                     MessageBox.Show("Помилка при оновленні балансу.");
                 }
-            }
-            else
-            {
-                MessageBox.Show("Введіть коректну суму.");
             }
         }
 
