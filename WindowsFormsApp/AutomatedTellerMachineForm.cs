@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary2;
+using ClassLibrary2.Interfaces;
 
 namespace WindowsFormsApp
 {
@@ -73,16 +74,18 @@ namespace WindowsFormsApp
                     return;
                 }
 
-                AccountRepository accountRepository = new AccountRepository();
-                Account targetAccount = accountRepository.GetAccountByCardNumber(targetCardNumber);
+                IReadableAccount readableRepo = new AccountRepository();
+                IUpdatableAccount updatableRepo = new AccountRepository();
+
+                Account targetAccount = readableRepo.GetAccountByCardNumber(targetCardNumber);
 
                 if (targetAccount != null)
                 {
                     account.Balance -= transferAmount;
                     targetAccount.Balance += transferAmount;
 
-                    bool senderUpdated = accountRepository.UpdateAccount(account);
-                    bool receiverUpdated = accountRepository.UpdateAccount(targetAccount);
+                    bool senderUpdated = updatableRepo.UpdateAccount(account);
+                    bool receiverUpdated = updatableRepo.UpdateAccount(targetAccount);
 
                     if (senderUpdated && receiverUpdated)
                     {
@@ -200,7 +203,7 @@ namespace WindowsFormsApp
             {
                 pendingDepositAmount = amount;
                 awaitingCash = true;
-                MessageBox.Show("Очікування прийняття готівки. Натисніть клавішу 'M' після внесення готівки.",
+                MessageBox.Show("Очікування прийняття готівки.",
                     "Поповнення", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else

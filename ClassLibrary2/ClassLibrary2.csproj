@@ -48,6 +48,10 @@
     <Compile Include="AutomatedTellerMachine.cs" />
     <Compile Include="AutomatedTellerMachineEventArgs.cs" />
     <Compile Include="Bank.cs" />
+    <Compile Include="Interfaces\ICreatableAccount.cs" />
+    <Compile Include="Interfaces\IDeletableAccount.cs" />
+    <Compile Include="Interfaces\IReadableAccount.cs" />
+    <Compile Include="Interfaces\IUpdatableAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
