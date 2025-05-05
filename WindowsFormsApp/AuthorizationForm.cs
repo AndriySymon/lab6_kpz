@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary2;
+using ClassLibrary2.Interfaces;
 
 namespace WindowsFormsApp
 {
     public partial class AuthorizationForm : Form
     {
-        private AccountRepository accountRepository;
+        private IReadableAccount accountRepository;
         public AuthorizationForm()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace WindowsFormsApp
         }
         private void AuthorizationForm_Load(object sender, EventArgs e)
         {
-
+                
         }
 
         private void label1_Click(object sender, EventArgs e)

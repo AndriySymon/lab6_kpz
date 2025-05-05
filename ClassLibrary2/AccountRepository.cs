@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using ClassLibrary2.Interfaces;
 
 namespace ClassLibrary2
 {
-    public class AccountRepository
+    public class AccountRepository : IDeletableAccount, IUpdatableAccount, ICreatableAccount, IReadableAccount
     {
         private readonly string connectionString = "Server=DESKTOP-PVSCHEE;Database=ATMDatabase;Trusted_Connection=True;";
 

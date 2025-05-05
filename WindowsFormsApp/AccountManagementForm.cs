@@ -8,18 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary2;
+using ClassLibrary2.Interfaces;
 
 namespace WindowsFormsApp
 {
     public partial class AccountManagementForm : Form
     {
         private Account currentAccount;
-        private AccountRepository repo = new AccountRepository();
+
+        private IDeletableAccount repo;
+        private IUpdatableAccount repoUpdate;
 
         public AccountManagementForm(Account account)
         {
             InitializeComponent();
             currentAccount = account;
+            var repository = new AccountRepository();
+            repo = repository;
+            repoUpdate = repository;
         }
 
         private void AccountManagementForm_Load(object sender, EventArgs e)
@@ -36,7 +42,7 @@ namespace WindowsFormsApp
             currentAccount.LastName = txtLastName.Text;
             currentAccount.Phone = txtPhone.Text;
 
-            bool updated = repo.UpdateAccount(currentAccount);
+            bool updated = repoUpdate.UpdateAccount(currentAccount);
 
             if (updated)
                 MessageBox.Show("Акаунт оновлено успішно!", "Оновлення", MessageBoxButtons.OK, MessageBoxIcon.Information);
