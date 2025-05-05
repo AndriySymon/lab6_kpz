@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,11 +49,20 @@
     <Compile Include="AutomatedTellerMachine.cs" />
     <Compile Include="AutomatedTellerMachineEventArgs.cs" />
     <Compile Include="Bank.cs" />
+    <Compile Include="Handlers\PositiveAmountHandler.cs" />
+    <Compile Include="Handlers\SufficientBalanceHandler.cs" />
+    <Compile Include="Handlers\WithdrawHandler.cs" />
+    <Compile Include="Handlers\WithdrawLimitHandler.cs" />
     <Compile Include="Interfaces\ICreatableAccount.cs" />
     <Compile Include="Interfaces\IDeletableAccount.cs" />
     <Compile Include="Interfaces\IReadableAccount.cs" />
     <Compile Include="Interfaces\IUpdatableAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Handlers\ReceiverExistsHandler.cs" />
+    <Compile Include="Handlers\SufficientFundsHandler.cs" />
+    <Compile Include="Handlers\TransferHandler.cs" />
+    <Compile Include="Handlers\TransferLimitHandler.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
