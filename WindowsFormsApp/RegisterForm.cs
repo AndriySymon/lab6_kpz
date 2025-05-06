@@ -16,6 +16,10 @@ namespace WindowsFormsApp
     {
         private ICreatableAccount repo;
 
+        private const string CardNumberPrefix = "4149";
+        private const int CardNumberGeneratedDigits = 12;
+        private const double InitialBalance = 0.0;
+
         public RegisterForm()
         {
             InitializeComponent();
@@ -24,9 +28,9 @@ namespace WindowsFormsApp
         public string GenerateCardNumber()
         {
             Random rnd = new Random();
-            StringBuilder cardNumber = new StringBuilder("4149");
+            StringBuilder cardNumber = new StringBuilder(CardNumberPrefix);
 
-            for (int i = 0; i < 12; i++)
+            for (int i = 0; i < CardNumberGeneratedDigits; i++)
             {
                 cardNumber.Append(rnd.Next(0, 10));
             }
@@ -60,8 +64,8 @@ namespace WindowsFormsApp
                 txtLastName.Text,
                 txtEmail.Text,
                 txtPhone.Text,
-                0.0,
-                0.0
+                InitialBalance,
+                InitialBalance
             );
 
             if (repo.AddAccount(account))
