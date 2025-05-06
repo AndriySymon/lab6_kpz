@@ -100,19 +100,22 @@ namespace WindowsFormsApp
             }
         }
 
-        private const double MinWithdrawAmount = 0.01;
+
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
             if (double.TryParse(txtWithdrawAmount.Text, out double withdrawAmount))
             {
-                if (account.TryWithdraw(withdrawAmount))
+                var validator = new AmountValidator();
+                if (validator.IsValid(withdrawAmount, account.Balance, out string errorMessage))
                 {
+                    account.Balance -= withdrawAmount;
+
                     IUpdatableAccount repo = new AccountRepository();
                     bool updated = repo.UpdateAccount(account);
 
                     if (updated)
                     {
-                        MessageBox.Show("Готівку знято. Новий баланс: " + account.Balance.ToString("0.00"));
+                        MessageBox.Show($"Готівку знято. Новий баланс: {account.Balance:0.00}");
                         txtWithdrawAmount.Clear();
                     }
                     else
@@ -122,7 +125,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    MessageBox.Show($"Неможливо зняти суму. Перевірте, що вона більша за {MinWithdrawAmount} і не перевищує баланс.");
+                    MessageBox.Show(errorMessage);
                 }
             }
             else
