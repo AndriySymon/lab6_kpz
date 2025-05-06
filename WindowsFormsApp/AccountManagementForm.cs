@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary2;
@@ -42,12 +43,13 @@ namespace WindowsFormsApp
             currentAccount.LastName = txtLastName.Text;
             currentAccount.Phone = txtPhone.Text;
 
-            bool updated = repoUpdate.UpdateAccount(currentAccount);
+            bool isUpdated = repoUpdate.UpdateAccount(currentAccount);
 
-            if (updated)
+            if (isUpdated)
                 MessageBox.Show("Акаунт оновлено успішно!", "Оновлення", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 MessageBox.Show("Помилка при оновленні.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -72,6 +74,36 @@ namespace WindowsFormsApp
                     MessageBox.Show("Помилка при видаленні.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void btnChangePIN_Click(object sender, EventArgs e)
+        {
+            string oldPin = txtOldPIN.Text.Trim();
+            string newPin = txtNewPIN.Text.Trim();
+            string confirmPin = txtConfirmPIN.Text.Trim();
+            if (oldPin != currentAccount.CardPIN)
+            {
+                MessageBox.Show("Старий PIN неправильний.");
+                return;
+            }
+            if (newPin != confirmPin)
+            {
+                MessageBox.Show("Новий PIN і підтвердження не збігаються.");
+                return;
+            }
+            if (!Regex.IsMatch(newPin, @"^\d{4}$"))
+            {
+                MessageBox.Show("Новий PIN повинен складатися з 4 цифр.");
+                return;
+            }
+            currentAccount.CardPIN = newPin;
+
+            bool isPinUpdated = repoUpdate.UpdateAccount(currentAccount);
+
+            if (isPinUpdated)
+                MessageBox.Show("PIN успішно змінено.");
+            else
+                MessageBox.Show("Помилка при зміні PIN.");
         }
     }
 }

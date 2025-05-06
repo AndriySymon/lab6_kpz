@@ -3,46 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\classlibrary2\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|c:\\users\\user\\onedrive\\desktop\\atm\\windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\windowsformsapp\\authorizationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\authorizationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\classlibrary2\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\classlibrary2\\amountvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\amountvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\classlibrary2\\accountbalanceeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\accountbalanceeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\windowsformsapp\\authorizationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\authorizationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\windowsformsapp\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,20 +11,8 @@
       "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\classlibrary2\\automatedtellermachineeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\automatedtellermachineeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\classlibrary2\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\classlibrary2\\automatedtellermachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\automatedtellermachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\classlibrary2\\accounteventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\accounteventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|c:\\users\\user\\onedrive\\desktop\\atm\\classlibrary2\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,199 +50,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthorizationForm.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AuthorizationForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp\\AuthorizationForm.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AuthorizationForm.cs",
-              "RelativeToolTip": "WindowsFormsApp\\AuthorizationForm.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAgwG0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T14:16:18.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AccountBalanceEventArgs.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\AccountBalanceEventArgs.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\AccountBalanceEventArgs.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\AccountBalanceEventArgs.cs",
-              "RelativeToolTip": "ClassLibrary2\\AccountBalanceEventArgs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T11:15:09.74Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AutomatedTellerMachineForm.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AutomatedTellerMachineForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp\\AutomatedTellerMachineForm.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AutomatedTellerMachineForm.cs",
-              "RelativeToolTip": "WindowsFormsApp\\AutomatedTellerMachineForm.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAhwD0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T12:58:19.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\Account.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\Account.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\Account.cs",
-              "RelativeToolTip": "ClassLibrary2\\Account.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAewB4AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T11:15:03.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AccountRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\AccountRepository.cs",
               "RelativeDocumentMoniker": "ClassLibrary2\\AccountRepository.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\AccountRepository.cs",
               "RelativeToolTip": "ClassLibrary2\\AccountRepository.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAewD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAWwHEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T11:15:13.24Z",
+              "WhenOpened": "2025-05-06T18:36:59.732Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AutomatedTellerMachineForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AutomatedTellerMachineForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp\\AutomatedTellerMachineForm.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AutomatedTellerMachineForm.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp\\AutomatedTellerMachineForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T12:52:34.205Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RegisterForm.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp\\RegisterForm.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\RegisterForm.cs",
-              "RelativeToolTip": "WindowsFormsApp\\RegisterForm.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAwEIAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T14:09:29.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AmountValidator.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\AmountValidator.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\AmountValidator.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\AmountValidator.cs",
-              "RelativeToolTip": "ClassLibrary2\\AmountValidator.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T17:17:58.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthorizationForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AuthorizationForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp\\AuthorizationForm.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AuthorizationForm.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp\\AuthorizationForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T14:02:28.269Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RegisterForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp\\RegisterForm.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\RegisterForm.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp\\RegisterForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T14:05:09.135Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "AccountManagementForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AccountManagementForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp\\AccountManagementForm.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AccountManagementForm.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp\\AccountManagementForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T11:04:07.355Z"
+              "WhenOpened": "2025-05-03T11:04:07.355Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "AccountManagementForm.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AccountManagementForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp\\AccountManagementForm.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AccountManagementForm.cs",
               "RelativeToolTip": "WindowsFormsApp\\AccountManagementForm.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADsAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAgwFIAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T11:04:34.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AutomatedTellerMachineEventArgs.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\AutomatedTellerMachineEventArgs.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\AutomatedTellerMachineEventArgs.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\AutomatedTellerMachineEventArgs.cs",
-              "RelativeToolTip": "ClassLibrary2\\AutomatedTellerMachineEventArgs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T11:15:17.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Bank.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\Bank.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\Bank.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\Bank.cs",
-              "RelativeToolTip": "ClassLibrary2\\Bank.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T11:15:18.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AutomatedTellerMachine.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\AutomatedTellerMachine.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\AutomatedTellerMachine.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\AutomatedTellerMachine.cs",
-              "RelativeToolTip": "ClassLibrary2\\AutomatedTellerMachine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T11:15:12.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AccountEventArgs.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\AccountEventArgs.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\AccountEventArgs.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\AccountEventArgs.cs",
-              "RelativeToolTip": "ClassLibrary2\\AccountEventArgs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T11:15:11.481Z"
+              "WhenOpened": "2025-05-03T11:04:34.889Z",
+              "EditorCaption": ""
             }
           ]
         }

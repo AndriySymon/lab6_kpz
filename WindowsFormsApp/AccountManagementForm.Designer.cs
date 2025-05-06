@@ -39,6 +39,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtOldPIN = new System.Windows.Forms.TextBox();
+            this.txtNewPIN = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtConfirmPIN = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnChangePIN = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -119,7 +127,7 @@
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnUpdate.Location = new System.Drawing.Point(159, 354);
+            this.btnUpdate.Location = new System.Drawing.Point(159, 349);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(116, 23);
             this.btnUpdate.TabIndex = 9;
@@ -130,7 +138,7 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.IndianRed;
-            this.btnDelete.Location = new System.Drawing.Point(287, 415);
+            this.btnDelete.Location = new System.Drawing.Point(287, 632);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(142, 23);
             this.btnDelete.TabIndex = 11;
@@ -138,11 +146,88 @@
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(19, 426);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 16);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Старий PIN";
+            // 
+            // txtOldPIN
+            // 
+            this.txtOldPIN.Location = new System.Drawing.Point(22, 445);
+            this.txtOldPIN.Name = "txtOldPIN";
+            this.txtOldPIN.Size = new System.Drawing.Size(253, 22);
+            this.txtOldPIN.TabIndex = 13;
+            // 
+            // txtNewPIN
+            // 
+            this.txtNewPIN.Location = new System.Drawing.Point(22, 497);
+            this.txtNewPIN.Name = "txtNewPIN";
+            this.txtNewPIN.Size = new System.Drawing.Size(253, 22);
+            this.txtNewPIN.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(19, 478);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(74, 16);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Новий PIN";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(105, 394);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(187, 29);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Зміна PIN-коду";
+            // 
+            // txtConfirmPIN
+            // 
+            this.txtConfirmPIN.Location = new System.Drawing.Point(22, 550);
+            this.txtConfirmPIN.Name = "txtConfirmPIN";
+            this.txtConfirmPIN.Size = new System.Drawing.Size(253, 22);
+            this.txtConfirmPIN.TabIndex = 18;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(19, 531);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(158, 16);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Підтвердити новий PIN";
+            // 
+            // btnChangePIN
+            // 
+            this.btnChangePIN.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnChangePIN.Location = new System.Drawing.Point(161, 594);
+            this.btnChangePIN.Name = "btnChangePIN";
+            this.btnChangePIN.Size = new System.Drawing.Size(114, 23);
+            this.btnChangePIN.TabIndex = 19;
+            this.btnChangePIN.Text = "Змінити PIN";
+            this.btnChangePIN.UseVisualStyleBackColor = false;
+            this.btnChangePIN.Click += new System.EventHandler(this.btnChangePIN_Click);
+            // 
             // AccountManagementForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(441, 450);
+            this.ClientSize = new System.Drawing.Size(441, 667);
+            this.Controls.Add(this.btnChangePIN);
+            this.Controls.Add(this.txtConfirmPIN);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtNewPIN);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtOldPIN);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtPhone);
@@ -176,5 +261,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtOldPIN;
+        private System.Windows.Forms.TextBox txtNewPIN;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtConfirmPIN;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnChangePIN;
     }
 }

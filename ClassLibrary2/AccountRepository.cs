@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using ClassLibrary2.Interfaces;
+using System.Security.Principal;
 
 namespace ClassLibrary2
 {
@@ -106,20 +107,22 @@ namespace ClassLibrary2
             {
                 connection.Open();
                 var command = new SqlCommand(@"
-            UPDATE Accounts SET
+                UPDATE Accounts SET
                 FirstName = @fn,
                 LastName = @ln,
                 Phone = @ph,
+                CardPIN = @CardPIN,
                 Balance = @bal,
                 FailedLoginAttempts = @attempts,
                 IsLocked = @locked,
                 LockTime = @lockTime
-            WHERE CardNumber = @cn", connection);
+                WHERE CardNumber = @cn", connection);
 
                 command.Parameters.AddWithValue("@fn", acc.FirstName);
                 command.Parameters.AddWithValue("@ln", acc.LastName);
                 command.Parameters.AddWithValue("@ph", acc.Phone);
                 command.Parameters.AddWithValue("@bal", acc.Balance);
+                command.Parameters.AddWithValue("@CardPIN", acc.CardPIN);
                 command.Parameters.AddWithValue("@attempts", acc.FailedLoginAttempts);
                 command.Parameters.AddWithValue("@locked", acc.IsLocked);
                 command.Parameters.AddWithValue("@lockTime", acc.LockTime.HasValue ? (object)acc.LockTime.Value : DBNull.Value);
