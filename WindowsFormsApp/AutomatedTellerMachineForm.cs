@@ -105,31 +105,24 @@ namespace WindowsFormsApp
         {
             if (double.TryParse(txtWithdrawAmount.Text, out double withdrawAmount))
             {
-                if (withdrawAmount < MinWithdrawAmount)
+                if (account.TryWithdraw(withdrawAmount))
                 {
-                    MessageBox.Show($"Сума повинна бути більшою за {MinWithdrawAmount}.");
-                    return;
-                }
+                    IUpdatableAccount repo = new AccountRepository();
+                    bool updated = repo.UpdateAccount(account);
 
-                if (withdrawAmount > account.Balance)
-                {
-                    MessageBox.Show("На рахунку недостатньо коштів.");
-                    return;
-                }
-
-                account.Balance -= withdrawAmount;
-
-                IUpdatableAccount repo = new AccountRepository();
-                bool updated = repo.UpdateAccount(account);
-
-                if (updated)
-                {
-                    MessageBox.Show("Готівку знято. Новий баланс: " + account.Balance.ToString("0.00"));
-                    txtWithdrawAmount.Clear();
+                    if (updated)
+                    {
+                        MessageBox.Show("Готівку знято. Новий баланс: " + account.Balance.ToString("0.00"));
+                        txtWithdrawAmount.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Помилка при оновленні балансу.");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Помилка при оновленні балансу.");
+                    MessageBox.Show($"Неможливо зняти суму. Перевірте, що вона більша за {MinWithdrawAmount} і не перевищує баланс.");
                 }
             }
             else

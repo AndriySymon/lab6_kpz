@@ -61,47 +61,6 @@ namespace ClassLibrary2
             CheckedBalance?.Invoke(this, new AccountEventArgs($"Ваш баланс {Balance} грн."));
         }
 
-        public void Put()
-        {
-            if (HasWithdrawnDeposit)
-            {
-                Withdrawn?.Invoke(this, new AccountBalanceEventArgs("Ви вже зняли всі гроші з депозиту.", 0));
-                return;
-            }
-
-            if (MaxDepositLimit > 0)
-            {
-                Withdrawn?.Invoke(this, new AccountBalanceEventArgs($"Чи бажаєте ви зняти {MaxDepositLimit} грн з депозиту?", MaxDepositLimit));
-            }
-            else
-            {
-                Withdrawn?.Invoke(this, new AccountBalanceEventArgs("Депозит вже порожній.", 0));
-            }
-        }
-        public void ConfirmWithdrawDeposit()
-        {
-            if (MaxDepositLimit > 0)
-            {
-                Balance += MaxDepositLimit;
-                MaxDepositLimit = 0;
-                HasWithdrawnDeposit = true; 
-                Withdrawn?.Invoke(this, new AccountBalanceEventArgs($"Ви успішно зняли гроші з депозиту.", Balance));
-            }
-        }
-
-        public void Withdraw(double sum)
-        {
-            if (sum <= Balance)
-            {
-                Balance -= sum;
-                Withdrawn?.Invoke(this, new AccountBalanceEventArgs($"Гроші знято.", sum));
-            }
-            else
-            {
-                Withdrawn?.Invoke(this, new AccountBalanceEventArgs($"У вас не достатньо грошей.", sum));
-            }
-        }
-
         public void Transfer(double sum, Account targetAccount)
         {
             if (sum <= Balance)
@@ -114,6 +73,17 @@ namespace ClassLibrary2
             {
                 Transferred?.Invoke(this, new AccountBalanceEventArgs($"У вас немає достатньо грошей.", sum));
             }
+        }
+
+        public bool TryWithdraw(double amount)
+        {
+            const double MinWithdrawAmount = 0.01;
+
+            if (amount < MinWithdrawAmount) return false;
+            if (amount > Balance) return false;
+
+            Balance -= amount;
+            return true;
         }
     }
 }
