@@ -46,6 +46,7 @@
             this.txtCashAmount = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnCash = new System.Windows.Forms.Button();
+            this.btnViewHistory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -221,12 +222,23 @@
             this.btnCash.UseVisualStyleBackColor = true;
             this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
             // 
+            // btnViewHistory
+            // 
+            this.btnViewHistory.Location = new System.Drawing.Point(16, 174);
+            this.btnViewHistory.Name = "btnViewHistory";
+            this.btnViewHistory.Size = new System.Drawing.Size(251, 34);
+            this.btnViewHistory.TabIndex = 21;
+            this.btnViewHistory.Text = "Переглянути історію транзакцій";
+            this.btnViewHistory.UseVisualStyleBackColor = true;
+            this.btnViewHistory.Click += new System.EventHandler(this.btnViewHistory_Click);
+            // 
             // AutomatedTellerMachineForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnViewHistory);
             this.Controls.Add(this.btnCash);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCashAmount);
@@ -275,5 +287,6 @@
         private System.Windows.Forms.TextBox txtCashAmount;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnCash;
+        private System.Windows.Forms.Button btnViewHistory;
     }
 }

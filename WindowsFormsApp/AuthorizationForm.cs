@@ -87,7 +87,8 @@ namespace WindowsFormsApp
                 account.Authorizated += OnAuthorizated;
                 if (account.ValidateAuthorization(cardNumber, cardPIN))
                 {
-                    AutomatedTellerMachineForm atmForm = new AutomatedTellerMachineForm(account);
+                    var repo = new AccountRepository();
+                    AutomatedTellerMachineForm atmForm = new AutomatedTellerMachineForm(account, repo);
                     atmForm.Show();
                     this.Hide();
                 }
