@@ -100,23 +100,23 @@ namespace WindowsFormsApp
             }
         }
 
+        private const double MinWithdrawAmount = 0.01;
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
-            if (!double.TryParse(txtWithdrawAmount.Text, out double withdrawAmount))
+            if (double.TryParse(txtWithdrawAmount.Text, out double withdrawAmount))
             {
-                MessageBox.Show("Введіть коректну суму.");
-                return;
-            }
+                if (withdrawAmount < MinWithdrawAmount)
+                {
+                    MessageBox.Show($"Сума повинна бути більшою за {MinWithdrawAmount}.");
+                    return;
+                }
 
-            var handler1 = new PositiveAmountHandler();
-            var handler2 = new SufficientBalanceHandler();
-            var handler3 = new WithdrawLimitHandler();
+                if (withdrawAmount > account.Balance)
+                {
+                    MessageBox.Show("На рахунку недостатньо коштів.");
+                    return;
+                }
 
-            handler1.SetNext(handler2);
-            handler2.SetNext(handler3);
-
-            if (handler1.Handle(account, withdrawAmount))
-            {
                 account.Balance -= withdrawAmount;
 
                 IUpdatableAccount repo = new AccountRepository();
@@ -131,6 +131,10 @@ namespace WindowsFormsApp
                 {
                     MessageBox.Show("Помилка при оновленні балансу.");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Введіть коректну суму.");
             }
         }
 
