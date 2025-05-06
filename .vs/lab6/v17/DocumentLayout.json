@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|c:\\users\\user\\onedrive\\desktop\\atm\\classlibrary2\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|c:\\users\\user\\onedrive\\desktop\\atm\\windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|c:\\users\\user\\onedrive\\desktop\\atm\\windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\ATM\\windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|c:\\users\\user\\onedrive\\desktop\\atm\\windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +30,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\Account.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Account.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\ClassLibrary2\\Account.cs",
+              "RelativeToolTip": "ClassLibrary2\\Account.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAA1wFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T13:51:09.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "RegisterForm.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\RegisterForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp\\RegisterForm.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\RegisterForm.cs",
               "RelativeToolTip": "WindowsFormsApp\\RegisterForm.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAkwBsAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAIA3wEQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T13:34:59.457Z",
               "EditorCaption": ""
@@ -55,20 +72,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AutomatedTellerMachineForm.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AutomatedTellerMachineForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp\\AutomatedTellerMachineForm.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AutomatedTellerMachineForm.cs",
               "RelativeToolTip": "WindowsFormsApp\\AutomatedTellerMachineForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAowGwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T12:33:35.163Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AutomatedTellerMachineForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AutomatedTellerMachineForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp\\AutomatedTellerMachineForm.cs",
