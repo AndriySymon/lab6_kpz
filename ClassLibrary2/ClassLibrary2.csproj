@@ -46,6 +46,7 @@
     <Compile Include="AccountBalanceEventArgs.cs" />
     <Compile Include="AccountEventArgs.cs" />
     <Compile Include="AccountRepository.cs" />
+    <Compile Include="AmountValidator.cs" />
     <Compile Include="AutomatedTellerMachine.cs" />
     <Compile Include="AutomatedTellerMachineEventArgs.cs" />
     <Compile Include="Bank.cs" />

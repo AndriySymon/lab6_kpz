@@ -60,31 +60,6 @@ namespace ClassLibrary2
         {
             CheckedBalance?.Invoke(this, new AccountEventArgs($"Ваш баланс {Balance} грн."));
         }
-
-        public void Transfer(double sum, Account targetAccount)
-        {
-            if (sum <= Balance)
-            {
-                Balance -= sum;
-                targetAccount.Balance += sum;
-                Transferred?.Invoke(this, new AccountBalanceEventArgs($"Ви перевели {sum} грн на карту: {targetAccount.CardNumber}.", sum));
-            }
-            else
-            {
-                Transferred?.Invoke(this, new AccountBalanceEventArgs($"У вас немає достатньо грошей.", sum));
-            }
-        }
-
-        public bool TryWithdraw(double amount)
-        {
-            const double MinWithdrawAmount = 0.01;
-
-            if (amount < MinWithdrawAmount) return false;
-            if (amount > Balance) return false;
-
-            Balance -= amount;
-            return true;
-        }
     }
 }
 
