@@ -63,6 +63,7 @@
     <Compile Include="Handlers\SufficientFundsHandler.cs" />
     <Compile Include="Handlers\TransferHandler.cs" />
     <Compile Include="Handlers\TransferLimitHandler.cs" />
+    <Compile Include="Transaction.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

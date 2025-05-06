@@ -20,15 +20,18 @@ namespace WindowsFormsApp
         private AccountRepository accountRepository;
         private Account currentAccount;
 
+        private readonly AccountRepository _repository;
+
         private double pendingDepositAmount = 0.0;
         private bool awaitingCash = false;
-        public AutomatedTellerMachineForm( Account account)
+        public AutomatedTellerMachineForm( Account account, AccountRepository repository)
         {
             InitializeComponent();
             currentAccount = account;
             InitializeBlinkingLabel();
 
             this.account = account;
+            this._repository = repository;
 
             account.CheckedBalance += OnCheckedBalance;
             account.Added += OnMoneyAdded;
@@ -89,6 +92,22 @@ namespace WindowsFormsApp
 
                 if (senderUpdated && receiverUpdated)
                 {
+                    _repository.AddTransaction(new Transaction
+                    {
+                        CardNumber = account.CardNumber,
+                        Type = "TransferOut",
+                        Amount = transferAmount,
+                        Timestamp = DateTime.Now
+                    });
+
+                    _repository.AddTransaction(new Transaction
+                    {
+                        CardNumber = targetAccount.CardNumber,
+                        Type = "TransferIn",
+                        Amount = transferAmount,
+                        Timestamp = DateTime.Now
+                    });
+
                     MessageBox.Show("Переказ успішно виконано!");
                     txtTransferAmount.Clear();
                     txtTransferCardNumber.Clear();
@@ -110,11 +129,20 @@ namespace WindowsFormsApp
                 {
                     account.Balance -= withdrawAmount;
 
-                    IUpdatableAccount repo = new AccountRepository();
+                    AccountRepository repo = new AccountRepository();
                     bool updated = repo.UpdateAccount(account);
 
                     if (updated)
                     {
+                        var transaction = new Transaction
+                        {
+                            CardNumber = account.CardNumber,
+                            Type = "Withdraw",
+                            Amount = withdrawAmount,
+                            Timestamp = DateTime.Now
+                        };
+                        repo.AddTransaction(transaction);
+
                         MessageBox.Show($"Готівку знято. Новий баланс: {account.Balance:0.00}");
                         txtWithdrawAmount.Clear();
                     }
@@ -191,6 +219,15 @@ namespace WindowsFormsApp
             {
                 pendingDepositAmount = amount;
                 awaitingCash = true;
+
+                _repository.AddTransaction(new Transaction
+                {
+                    CardNumber = currentAccount.CardNumber,
+                    Type = "Deposit",
+                    Amount = amount,
+                    Timestamp = DateTime.Now
+                });
+
                 MessageBox.Show("Очікування прийняття готівки.",
                     "Поповнення", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -231,6 +268,12 @@ namespace WindowsFormsApp
                 awaitingCash = false;
                 pendingDepositAmount = 0.0;
             }
+        }
+
+        private void btnViewHistory_Click(object sender, EventArgs e)
+        {
+            var historyForm = new TransactionHistoryForm(currentAccount, accountRepository);
+            historyForm.ShowDialog();
         }
     }
 }

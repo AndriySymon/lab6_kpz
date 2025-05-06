@@ -143,5 +143,61 @@ namespace ClassLibrary2
             }
         }
 
+        public void AddTransaction(string cardNumber, string type, double amount)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                var command = new SqlCommand("INSERT INTO Transactions (CardNumber, Type, Amount) VALUES (@card, @type, @amount)", connection);
+                command.Parameters.AddWithValue("@card", cardNumber);
+                command.Parameters.AddWithValue("@type", type);
+                command.Parameters.AddWithValue("@amount", amount);
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public List<Transaction> GetTransactionHistory(string cardNumber)
+        {
+            var transactions = new List<Transaction>();
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                var command = new SqlCommand("SELECT * FROM Transactions WHERE CardNumber = @cn ORDER BY Timestamp DESC", connection);
+                command.Parameters.AddWithValue("@cn", cardNumber);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        transactions.Add(new Transaction
+                        {
+                            CardNumber = reader["CardNumber"].ToString(),
+                            Type = reader["Type"].ToString(),
+                            Amount = Convert.ToDouble(reader["Amount"]),
+                            Timestamp = Convert.ToDateTime(reader["Timestamp"])
+                        });
+                    }
+                }
+            }
+
+            return transactions;
+        }
+
+        public void AddTransaction(Transaction transaction)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                var command = new SqlCommand(@"INSERT INTO Transactions (CardNumber, Type, Amount, Timestamp)
+                                        VALUES (@cn, @type, @amount, @ts)", connection);
+                command.Parameters.AddWithValue("@cn", transaction.CardNumber);
+                command.Parameters.AddWithValue("@type", transaction.Type);
+                command.Parameters.AddWithValue("@amount", transaction.Amount);
+                command.Parameters.AddWithValue("@ts", transaction.Timestamp);
+                command.ExecuteNonQuery();
+            }
+        }
+
     }
 }
