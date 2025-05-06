@@ -64,7 +64,6 @@ namespace WindowsFormsApp
                 txtLastName.Text,
                 txtEmail.Text,
                 txtPhone.Text,
-                InitialBalance,
                 InitialBalance
             );
 
