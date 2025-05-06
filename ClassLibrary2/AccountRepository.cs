@@ -32,8 +32,7 @@ namespace ClassLibrary2
                             reader["LastName"].ToString(),
                             reader["Email"].ToString(),
                             reader["Phone"].ToString(),
-                            Convert.ToDouble(reader["Balance"]),
-                            Convert.ToDouble(reader["MaxDepositLimit"])
+                            Convert.ToDouble(reader["Balance"])
                         );
                     }
                 }
@@ -53,16 +52,28 @@ namespace ClassLibrary2
                 {
                     if (reader.Read())
                     {
-                        return new Account(
+                        var account = new Account(
                             reader["CardNumber"].ToString(),
                             reader["CardPIN"].ToString(),
                             reader["FirstName"].ToString(),
                             reader["LastName"].ToString(),
                             reader["Email"].ToString(),
                             reader["Phone"].ToString(),
-                            Convert.ToDouble(reader["Balance"]),
-                            Convert.ToDouble(reader["MaxDepositLimit"])
+                            Convert.ToDouble(reader["Balance"])
                         );
+
+                        account.FailedLoginAttempts = reader["FailedLoginAttempts"] != DBNull.Value
+                        ? Convert.ToInt32(reader["FailedLoginAttempts"])
+                        : 0;
+
+                        account.IsLocked = reader["IsLocked"] != DBNull.Value
+                        ? Convert.ToBoolean(reader["IsLocked"])
+                        : false;
+                        account.LockTime = reader["LockTime"] != DBNull.Value
+                            ? Convert.ToDateTime(reader["LockTime"])
+                            : (DateTime?)null;
+
+                        return account;
                     }
                 }
             }
@@ -74,8 +85,8 @@ namespace ClassLibrary2
             {
                 connection.Open();
                 var command = new SqlCommand(
-                    "INSERT INTO Accounts (CardNumber, CardPIN, FirstName, LastName, Email, Phone, Balance, MaxDepositLimit) " +
-                    "VALUES (@CardNumber, @CardPIN, @FirstName, @LastName, @Email, @Phone, @Balance, @MaxDepositLimit)", connection);
+                    "INSERT INTO Accounts (CardNumber, CardPIN, FirstName, LastName, Email, Phone, Balance) " +
+                    "VALUES (@CardNumber, @CardPIN, @FirstName, @LastName, @Email, @Phone, @Balance)", connection);
 
                 command.Parameters.AddWithValue("@CardNumber", account.CardNumber);
                 command.Parameters.AddWithValue("@CardPIN", account.CardPIN);
@@ -84,23 +95,36 @@ namespace ClassLibrary2
                 command.Parameters.AddWithValue("@Email", account.Email);
                 command.Parameters.AddWithValue("@Phone", account.Phone);
                 command.Parameters.AddWithValue("@Balance", account.Balance);
-                command.Parameters.AddWithValue("@MaxDepositLimit", account.MaxDepositLimit);
 
                 return command.ExecuteNonQuery() > 0;
             }
         }
 
         public bool UpdateAccount(Account acc)
-    {
+        {
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                var command = new SqlCommand("UPDATE Accounts SET FirstName = @fn, Balance = @bal, LastName = @ln, Phone = @ph WHERE CardNumber = @cn", connection);
+                var command = new SqlCommand(@"
+            UPDATE Accounts SET
+                FirstName = @fn,
+                LastName = @ln,
+                Phone = @ph,
+                Balance = @bal,
+                FailedLoginAttempts = @attempts,
+                IsLocked = @locked,
+                LockTime = @lockTime
+            WHERE CardNumber = @cn", connection);
+
                 command.Parameters.AddWithValue("@fn", acc.FirstName);
                 command.Parameters.AddWithValue("@ln", acc.LastName);
                 command.Parameters.AddWithValue("@ph", acc.Phone);
                 command.Parameters.AddWithValue("@bal", acc.Balance);
+                command.Parameters.AddWithValue("@attempts", acc.FailedLoginAttempts);
+                command.Parameters.AddWithValue("@locked", acc.IsLocked);
+                command.Parameters.AddWithValue("@lockTime", acc.LockTime.HasValue ? (object)acc.LockTime.Value : DBNull.Value);
                 command.Parameters.AddWithValue("@cn", acc.CardNumber);
+
                 return command.ExecuteNonQuery() > 0;
             }
         }

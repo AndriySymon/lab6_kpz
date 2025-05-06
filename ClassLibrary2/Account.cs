@@ -25,12 +25,14 @@ namespace ClassLibrary2
         public string Email { get; set; }
         public string Phone { get; set; }
         public double Balance { get; set; }
-        public double MaxDepositLimit { get; set; }
         public bool HasWithdrawnDeposit { get; private set; } = false;
+        public int FailedLoginAttempts { get; set; }
+        public bool IsLocked { get; set; }
+        public DateTime? LockTime { get; set; }
 
         public Account() { }
 
-        public Account(string cardNumber, string cardPIN, string firstName, string lastName, string email, string phone, double balance, double maxDepositLimit)
+        public Account(string cardNumber, string cardPIN, string firstName, string lastName, string email, string phone, double balance)
         {
             CardNumber = cardNumber;
             CardPIN = cardPIN;
@@ -39,7 +41,6 @@ namespace ClassLibrary2
             Email = email;
             Phone = phone;
             Balance = balance;
-            MaxDepositLimit = maxDepositLimit;
         }
 
         public bool ValidateAuthorization(string cardNumber, string cardPIN)

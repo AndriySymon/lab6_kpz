@@ -14,11 +14,14 @@ namespace WindowsFormsApp
 {
     public partial class AuthorizationForm : Form
     {
-        private IReadableAccount accountRepository;
+        private IReadableAccount readableRepository;
+        private IUpdatableAccount updatableRepository;
         public AuthorizationForm()
         {
             InitializeComponent();
-            accountRepository = new AccountRepository();
+            var repo = new AccountRepository();
+            readableRepository = repo;
+            updatableRepository = repo;
         }
         private void AuthorizationForm_Load(object sender, EventArgs e)
         {
@@ -44,17 +47,44 @@ namespace WindowsFormsApp
             MessageBox.Show(e.Message);
         }
 
+        private const int MaxLoginAttempts = 3;
+        private readonly TimeSpan LockDuration = TimeSpan.FromMinutes(2);
         private void btnAuthorize_Click(object sender, EventArgs e)
         {
-            string cardNumber = txtCardNumber.Text;
-            string cardPIN = txtCardPIN.Text;
+            string cardNumber = txtCardNumber.Text.Trim();
+            string cardPIN = txtCardPIN.Text.Trim();
 
-            Account account = accountRepository.GetAccount(cardNumber, cardPIN);
+            Account account = readableRepository.GetAccountByCardNumber(cardNumber);
 
-            if (account != null)
+            if (account == null)
             {
-                account.Authorizated += OnAuthorizated;
+                MessageBox.Show("Користувача не знайдено.");
+                return;
+            }
 
+            if (account.IsLocked)
+            {
+                if (account.LockTime.HasValue && DateTime.Now >= account.LockTime.Value.Add(LockDuration))
+                {
+                    account.IsLocked = false;
+                    account.FailedLoginAttempts = 0;
+                    account.LockTime = null;
+                    updatableRepository.UpdateAccount(account);
+                }
+                else
+                {
+                    TimeSpan timeLeft = account.LockTime.Value.Add(LockDuration) - DateTime.Now;
+                    MessageBox.Show($"Акаунт заблокований. Спробуйте знову через {timeLeft.Minutes} хв {timeLeft.Seconds} сек.");
+                    return;
+                }
+            }
+
+            if (account.CardPIN == cardPIN)
+            {
+                account.FailedLoginAttempts = 0;
+                updatableRepository.UpdateAccount(account);
+
+                account.Authorizated += OnAuthorizated;
                 if (account.ValidateAuthorization(cardNumber, cardPIN))
                 {
                     AutomatedTellerMachineForm atmForm = new AutomatedTellerMachineForm(account);
@@ -64,7 +94,20 @@ namespace WindowsFormsApp
             }
             else
             {
-                MessageBox.Show("Користувача не знайдено. Невірний PIN або номер картки.");
+                account.FailedLoginAttempts++;
+
+                if (account.FailedLoginAttempts >= MaxLoginAttempts)
+                {
+                    account.IsLocked = true;
+                    account.LockTime = DateTime.Now;
+                    MessageBox.Show("Акаунт заблоковано через багато невдалих спроб входу.");
+                }
+                else
+                {
+                    MessageBox.Show($"Невірний PIN. Залишилось спроб: {MaxLoginAttempts - account.FailedLoginAttempts}");
+                }
+
+                updatableRepository.UpdateAccount(account);
             }
         }
 
