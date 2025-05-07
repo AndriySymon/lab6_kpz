@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using ClassLibrary2.Interfaces;
 using System.Security.Principal;
+using System.IO;
 
 namespace ClassLibrary2
 {
@@ -143,18 +144,7 @@ namespace ClassLibrary2
             }
         }
 
-        public void AddTransaction(string cardNumber, string type, double amount)
-        {
-            using (var connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-                var command = new SqlCommand("INSERT INTO Transactions (CardNumber, Type, Amount) VALUES (@card, @type, @amount)", connection);
-                command.Parameters.AddWithValue("@card", cardNumber);
-                command.Parameters.AddWithValue("@type", type);
-                command.Parameters.AddWithValue("@amount", amount);
-                command.ExecuteNonQuery();
-            }
-        }
+
 
         public List<Transaction> GetTransactionHistory(string cardNumber)
         {

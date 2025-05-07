@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using ClassLibrary2;
 using ClassLibrary2.Interfaces;
 
@@ -19,10 +20,18 @@ namespace WindowsFormsApp
         public AuthorizationForm()
         {
             InitializeComponent();
+            this.Shown += new System.EventHandler(this.AuthorizationForm_Shown);
             var repo = new AccountRepository();
             readableRepository = repo;
             updatableRepository = repo;
         }
+        private void AuthorizationForm_Shown(object sender, EventArgs e)
+        {
+            txtName.Clear();
+            txtCardNumber.Clear();
+            txtCardPIN.Clear();
+        }
+
         private void AuthorizationForm_Load(object sender, EventArgs e)
         {
                 
