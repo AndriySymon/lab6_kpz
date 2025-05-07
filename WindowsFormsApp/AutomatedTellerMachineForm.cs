@@ -27,7 +27,6 @@ namespace WindowsFormsApp
 
         private Timer sessionTimer;
         private TimeSpan sessionTimeout = TimeSpan.FromSeconds(30);
-        private Form _loginForm;
         public AutomatedTellerMachineForm( Account account, AccountRepository repository)
         {
             InitializeComponent();

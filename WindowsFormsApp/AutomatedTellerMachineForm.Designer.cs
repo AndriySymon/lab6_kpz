@@ -259,7 +259,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AutomatedTellerMachineForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AutomatedTellerMachineForm";
+            this.Text = "ATM";
             this.Load += new System.EventHandler(this.AutomatedTellerMachineForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AutomatedTellerMachineForm_KeyDown);
             this.ResumeLayout(false);
