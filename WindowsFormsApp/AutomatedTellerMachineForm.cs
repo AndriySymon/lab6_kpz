@@ -24,6 +24,10 @@ namespace WindowsFormsApp
 
         private double pendingDepositAmount = 0.0;
         private bool awaitingCash = false;
+
+        private Timer sessionTimer;
+        private TimeSpan sessionTimeout = TimeSpan.FromSeconds(30);
+        private Form _loginForm;
         public AutomatedTellerMachineForm( Account account, AccountRepository repository)
         {
             InitializeComponent();
@@ -45,15 +49,47 @@ namespace WindowsFormsApp
         {
             this.KeyPreview = true;
             this.KeyDown += AutomatedTellerMachineForm_KeyDown;
+
+            sessionTimer = new Timer();
+            sessionTimer.Interval = 1000;
+            sessionTimer.Tick += SessionTimer_Tick;
+            sessionTimer.Start();
+        }
+
+        private int secondsInactive = 0;
+
+        private void SessionTimer_Tick(object sender, EventArgs e)
+        {
+            secondsInactive++;
+
+            if (secondsInactive >= sessionTimeout.TotalSeconds)
+            {
+                sessionTimer.Stop();
+                MessageBox.Show("Сесію завершено через неактивність.");
+
+                var authForm = new AuthorizationForm();
+
+                authForm.Controls["txtName"].Text = "";
+                authForm.Controls["txtCardNumber"].Text = "";
+                authForm.Controls["txtCardPIN"].Text = "";
+                authForm.Show();
+                this.Close();
+            }
+        }
+        private void ResetInactivityTimer()
+        {
+            secondsInactive = 0;
         }
 
         private void btnCheckBalance_Click(object sender, EventArgs e)
         {
+            ResetInactivityTimer();
             account.CheckBalance();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
+            ResetInactivityTimer();
             this.Close();
             AuthorizationForm loginForm = new AuthorizationForm();
             loginForm.StartPosition = FormStartPosition.CenterScreen;
@@ -62,6 +98,7 @@ namespace WindowsFormsApp
 
         private void btnTransfer_Click(object sender, EventArgs e)
         {
+            ResetInactivityTimer();
             string targetCardNumber = txtTransferCardNumber.Text.Trim();
 
             if (!double.TryParse(txtTransferAmount.Text, out double transferAmount) || transferAmount <= 0)
@@ -122,6 +159,7 @@ namespace WindowsFormsApp
 
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
+            ResetInactivityTimer();
             if (double.TryParse(txtWithdrawAmount.Text, out double withdrawAmount))
             {
                 var validator = new AmountValidator();
@@ -199,6 +237,7 @@ namespace WindowsFormsApp
 
         private void btnManageAccounts_Click(object sender, EventArgs e)
         {
+            ResetInactivityTimer();
             var manageForm = new AccountManagementForm(currentAccount);
             manageForm.ShowDialog();
         }
@@ -215,6 +254,7 @@ namespace WindowsFormsApp
 
         private void btnCash_Click(object sender, EventArgs e)
         {
+            ResetInactivityTimer();
             if (double.TryParse(txtCashAmount.Text, out double amount) && amount > 0)
             {
                 pendingDepositAmount = amount;
@@ -272,6 +312,7 @@ namespace WindowsFormsApp
 
         private void btnViewHistory_Click(object sender, EventArgs e)
         {
+            ResetInactivityTimer();
             var historyForm = new TransactionHistoryForm(currentAccount, accountRepository);
             historyForm.ShowDialog();
         }
