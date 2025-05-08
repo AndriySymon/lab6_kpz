@@ -40,7 +40,7 @@
 - **Single Responsibility Principle (SRP)**
 
 Кожен клас відповідає лише за одну дію - наприклад, [AccountRepository](https://github.com/AndriySymon/lab6_kpz/blob/master/ClassLibrary2/AccountRepository.cs) обробляє лише доступ до БД.
-Такі форми, як AccountManagementForm, RegisterForm — відповідають за логіку інтерфейсу користувача.
+Такі форми, як AccountManagementForm, RegisterForm — відповідають за логіку інтерфейсу користувача. А, наприклад, SessionManager відповідає за роботу з сесіямиЮ також цей код можна перевикористовувати, що є дуже зручно.
 
 - **Open/Closed Principle**
 
@@ -59,6 +59,11 @@
 
     - У моїх методах, таких як [btnCreateAccount_Click](https://github.com/AndriySymon/lab6_kpz/blob/8175b87d28ed88ffa255659bce977c511552e5b3/WindowsFormsApp/RegisterForm.cs#L48), [btnDelete_Click](https://github.com/AndriySymon/lab6_kpz/blob/8175b87d28ed88ffa255659bce977c511552e5b3/WindowsFormsApp/AccountManagementForm.cs#L55), [btnAuthorize_Click](https://github.com/AndriySymon/lab6_kpz/blob/8175b87d28ed88ffa255659bce977c511552e5b3/WindowsFormsApp/AuthorizationForm.cs#L61) - немає зайвих перевантажень, складних перевірок, зайвої логіки. Все структуровано та легко читається.
     - Відповідальність розбита між різними формами (авторизація, реєстрація, управління акаунтом).
+
+ -   **DRY (DON'T REPEAT YOURSELF)**
+ 
+Дотримано принцип DRY, тобто уникнено дублювання логіки.
+Файли, у яких використовується принцип DRY: [AccountManagementForm.cs](https://github.com/AndriySymon/lab6_kpz/blob/master/WindowsFormsApp/AccountManagementForm.cs), [AutomatedTellerMachine.cs](https://github.com/AndriySymon/lab6_kpz/blob/master/WindowsFormsApp/AutomatedTellerMachineForm.cs). Наприклад, у файлі AutomatedTellerMachine.cs метод [ResetInactivityTimer](https://github.com/AndriySymon/lab6_kpz/blob/ad0982cdd5a3fdb0241ef2fcff5059a1b41ff315/WindowsFormsApp/AutomatedTellerMachineForm.cs#L78) повторно викликається з різних подій, замість дублювання самого присвоєння secondsInactive = 0.
 
 - **Dependency Inversion Principle**
 

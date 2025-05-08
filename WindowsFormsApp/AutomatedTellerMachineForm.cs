@@ -25,8 +25,7 @@ namespace WindowsFormsApp
         private double pendingDepositAmount = 0.0;
         private bool awaitingCash = false;
 
-        private Timer sessionTimer;
-        private TimeSpan sessionTimeout = TimeSpan.FromSeconds(30);
+
         public AutomatedTellerMachineForm( Account account, AccountRepository repository)
         {
             InitializeComponent();
@@ -44,37 +43,26 @@ namespace WindowsFormsApp
             accountRepository = new AccountRepository();
         }
 
+        private SessionManager sessionManager;
         private void AutomatedTellerMachineForm_Load(object sender, EventArgs e)
         {
             this.KeyPreview = true;
-            this.KeyDown += AutomatedTellerMachineForm_KeyDown;
+            this.KeyPreview = true;
 
-            sessionTimer = new Timer();
-            sessionTimer.Interval = 1000;
-            sessionTimer.Tick += SessionTimer_Tick;
-            sessionTimer.Start();
+            sessionManager = new SessionManager(TimeSpan.FromSeconds(30));
+            sessionManager.SessionExpired += OnSessionExpired;
+            sessionManager.HookActivityEvents(this);
+            sessionManager.Start();
+        }
+        private void OnSessionExpired()
+        {
+            MessageBox.Show("Сесію завершено через неактивність.");
+            var authForm = new AuthorizationForm();
+            authForm.Show();
+            this.Close();
         }
 
         private int secondsInactive = 0;
-
-        private void SessionTimer_Tick(object sender, EventArgs e)
-        {
-            secondsInactive++;
-
-            if (secondsInactive >= sessionTimeout.TotalSeconds)
-            {
-                sessionTimer.Stop();
-                MessageBox.Show("Сесію завершено через неактивність.");
-
-                var authForm = new AuthorizationForm();
-
-                authForm.Controls["txtName"].Text = "";
-                authForm.Controls["txtCardNumber"].Text = "";
-                authForm.Controls["txtCardPIN"].Text = "";
-                authForm.Show();
-                this.Close();
-            }
-        }
         private void ResetInactivityTimer()
         {
             secondsInactive = 0;
