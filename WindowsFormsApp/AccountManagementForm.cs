@@ -20,6 +20,8 @@ namespace WindowsFormsApp
         private IDeletableAccount repo;
         private IUpdatableAccount repoUpdate;
 
+        private SessionManager sessionManager;
+
         public AccountManagementForm(Account account)
         {
             InitializeComponent();
@@ -27,6 +29,10 @@ namespace WindowsFormsApp
             var repository = new AccountRepository();
             repo = repository;
             repoUpdate = repository;
+
+            sessionManager = new SessionManager(TimeSpan.FromMinutes(2));
+            sessionManager.HookActivityEvents(this); 
+            sessionManager.SessionExpired += OnSessionExpired;
         }
 
         private void AccountManagementForm_Load(object sender, EventArgs e)
@@ -35,7 +41,22 @@ namespace WindowsFormsApp
             txtFirstName.Text = currentAccount.FirstName;
             txtLastName.Text = currentAccount.LastName;
             txtPhone.Text = currentAccount.Phone;
+
+            sessionManager.Start();
         }
+
+        private void OnSessionExpired()
+        {
+            Invoke((MethodInvoker)delegate
+            {
+                MessageBox.Show("Сесію завершено через бездіяльність.", "Сесія завершена", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                var loginForm = new AuthorizationForm();
+                loginForm.StartPosition = FormStartPosition.CenterScreen;
+                loginForm.Show();
+            });
+        }
+
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
