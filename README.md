@@ -23,7 +23,7 @@
 1. Склонуйте репозиторій:
 > git clone https://github.com/AndriySymon/lab6_kpz/tree/master.git
 
->cd atm-project
+>cd lab6_kpz
 
 2. Налаштуйте базу даних
 - Відкрийте SQL Server Management Studio.
