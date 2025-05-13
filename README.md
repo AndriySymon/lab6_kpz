@@ -21,7 +21,7 @@
 ## Запуск проекту локально
 
 1. Склонуйте репозиторій:
-> git clone https://github.com/AndriySymon/lab6_kpz/tree/master.git
+> git clone https://github.com/AndriySymon/lab6_kpz.git
 
 >cd lab6_kpz
 
