@@ -106,42 +106,48 @@ namespace WindowsFormsApp
             handler1.SetNext(handler2);
             handler2.SetNext(handler3);
 
-            if (handler1.Handle(account, targetAccount, transferAmount))
+            var result = handler1.Handle(account, targetAccount, transferAmount);
+
+            if (!result.Success)
             {
-                account.Balance -= transferAmount;
-                targetAccount.Balance += transferAmount;
+                MessageBox.Show(result.ErrorMessage);
+                return;
+            }
 
-                bool senderUpdated = updatableRepo.UpdateAccount(account);
-                bool receiverUpdated = updatableRepo.UpdateAccount(targetAccount);
+            account.Balance -= transferAmount;
+            targetAccount.Balance += transferAmount;
 
-                if (senderUpdated && receiverUpdated)
+            bool senderUpdated = updatableRepo.UpdateAccount(account);
+            bool receiverUpdated = updatableRepo.UpdateAccount(targetAccount);
+
+            if (senderUpdated && receiverUpdated)
+            {
+                _repository.AddTransaction(new Transaction
                 {
-                    _repository.AddTransaction(new Transaction
-                    {
-                        CardNumber = account.CardNumber,
-                        Type = "TransferOut",
-                        Amount = transferAmount,
-                        Timestamp = DateTime.Now
-                    });
+                    CardNumber = account.CardNumber,
+                    Type = "TransferOut",
+                    Amount = transferAmount,
+                    Timestamp = DateTime.Now
+                });
 
-                    _repository.AddTransaction(new Transaction
-                    {
-                        CardNumber = targetAccount.CardNumber,
-                        Type = "TransferIn",
-                        Amount = transferAmount,
-                        Timestamp = DateTime.Now
-                    });
-
-                    MessageBox.Show("Переказ успішно виконано!");
-                    txtTransferAmount.Clear();
-                    txtTransferCardNumber.Clear();
-                }
-                else
+                _repository.AddTransaction(new Transaction
                 {
-                    MessageBox.Show("Помилка при оновленні акаунтів.");
-                }
+                    CardNumber = targetAccount.CardNumber,
+                    Type = "TransferIn",
+                    Amount = transferAmount,
+                    Timestamp = DateTime.Now
+                });
+
+                MessageBox.Show("Переказ успішно виконано!");
+                txtTransferAmount.Clear();
+                txtTransferCardNumber.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Помилка при оновленні акаунтів.");
             }
         }
+
 
 
         private void btnWithdraw_Click(object sender, EventArgs e)

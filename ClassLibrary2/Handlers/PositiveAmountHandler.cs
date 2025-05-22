@@ -9,14 +9,14 @@ namespace ClassLibrary2.Handlers
 {
     public class PositiveAmountHandler : WithdrawHandler
     {
-        public override bool Handle(Account account, double amount)
+        public override HandlerResult Handle(Account account, double amount)
         {
             if (amount <= 0)
             {
-                MessageBox.Show("Сума повинна бути більшою за 0.");
-                return false;
+                return HandlerResult.Fail("Сума повинна бути більшою за 0.");
             }
-            return next?.Handle(account, amount) ?? true;
+            return base.Handle(account, amount);
         }
     }
 }
+

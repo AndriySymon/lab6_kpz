@@ -11,14 +11,15 @@ namespace ClassLibrary2.Handlers
     {
         private const double MaxWithdrawLimit = 10000;
 
-        public override bool Handle(Account account, double amount)
+        public override HandlerResult Handle(Account account, double amount)
         {
             if (amount > MaxWithdrawLimit)
             {
-                MessageBox.Show($"Максимальна сума для зняття — {MaxWithdrawLimit}.");
-                return false;
+                return HandlerResult.Fail($"Максимальна сума для зняття — {MaxWithdrawLimit}.");
             }
-            return next?.Handle(account, amount) ?? true;
+
+            return base.Handle(account, amount);
         }
     }
 }
+

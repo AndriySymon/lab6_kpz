@@ -5,19 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClassLibrary2
+namespace ClassLibrary2.Handlers
 {
     public class SufficientFundsHandler : TransferHandler
     {
-        public override bool Handle(Account sender, Account receiver, double amount)
+        public override HandlerResult Handle(Account sender, Account receiver, double amount)
         {
             if (sender.Balance < amount)
             {
-                MessageBox.Show("Недостатньо коштів.");
-                return false;
+                return HandlerResult.Fail("Недостатньо коштів.");
             }
-
-            return next?.Handle(sender, receiver, amount) ?? true;
+            return base.Handle(sender, receiver, amount);
         }
     }
 }
+
