@@ -5,21 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClassLibrary2
+namespace ClassLibrary2.Handlers
 {
     public class TransferLimitHandler : TransferHandler
     {
         private const double Limit = 5000;
 
-        public override bool Handle(Account sender, Account receiver, double amount)
+        public override HandlerResult Handle(Account sender, Account receiver, double amount)
         {
             if (amount > Limit)
             {
-                MessageBox.Show("Сума перевищує ліміт на один переказ.");
-                return false;
+                return HandlerResult.Fail("Сума перевищує ліміт на один переказ.");
             }
 
-            return next?.Handle(sender, receiver, amount) ?? true;
+            return base.Handle(sender, receiver, amount);
         }
     }
 }
+

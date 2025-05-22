@@ -9,15 +9,14 @@ namespace ClassLibrary2.Handlers
 {
     public class SufficientBalanceHandler : WithdrawHandler
     {
-        public override bool Handle(Account account, double amount)
+        public override HandlerResult Handle(Account account, double amount)
         {
             if (amount > account.Balance)
             {
-                MessageBox.Show("На рахунку недостатньо коштів.");
-                return false;
+                return HandlerResult.Fail("На рахунку недостатньо коштів.");
             }
-            return next?.Handle(account, amount) ?? true;
+            return base.Handle(account, amount);
         }
     }
-
 }
+

@@ -50,6 +50,7 @@
     <Compile Include="AutomatedTellerMachine.cs" />
     <Compile Include="AutomatedTellerMachineEventArgs.cs" />
     <Compile Include="Bank.cs" />
+    <Compile Include="Handlers\HandlerResult.cs" />
     <Compile Include="Handlers\PositiveAmountHandler.cs" />
     <Compile Include="Handlers\SufficientBalanceHandler.cs" />
     <Compile Include="Handlers\WithdrawHandler.cs" />

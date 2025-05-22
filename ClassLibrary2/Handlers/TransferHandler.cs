@@ -1,10 +1,11 @@
-﻿using System;
+﻿using ClassLibrary2.Handlers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary2
+namespace ClassLibrary2.Handlers
 {
     public abstract class TransferHandler
     {
@@ -15,6 +16,10 @@ namespace ClassLibrary2
             next = nextHandler;
         }
 
-        public abstract bool Handle(Account sender, Account receiver, double amount);
+        public virtual HandlerResult Handle(Account sender, Account receiver, double amount)
+        {
+            return next?.Handle(sender, receiver, amount) ?? HandlerResult.Ok();
+        }
     }
 }
+

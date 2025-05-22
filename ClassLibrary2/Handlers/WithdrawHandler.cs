@@ -15,6 +15,10 @@ namespace ClassLibrary2.Handlers
             next = nextHandler;
         }
 
-        public abstract bool Handle(Account account, double amount);
+        public virtual HandlerResult Handle(Account account, double amount)
+        {
+            return next?.Handle(account, amount) ?? HandlerResult.Ok();
+        }
     }
 }
+
