@@ -1,106 +1,166 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\",
+  "WorkspaceRootPath": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|c:\\users\\admin\\desktop\\university\\2\\kpz-mkr2\\pr-1\\lab6_kpz\\classlibrary2\\handlers\\handlerresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\handlerresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|c:\\users\\admin\\desktop\\university\\2\\kpz-mkr2\\pr-1\\lab6_kpz\\classlibrary2\\handlers\\positiveamounthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\positiveamounthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|c:\\users\\admin\\desktop\\university\\2\\kpz-mkr2\\pr-1\\lab6_kpz\\classlibrary2\\handlers\\receiverexistshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\receiverexistshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|c:\\users\\admin\\desktop\\university\\2\\kpz-mkr2\\pr-1\\lab6_kpz\\classlibrary2\\handlers\\sufficientbalancehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\sufficientbalancehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|c:\\users\\admin\\desktop\\university\\2\\kpz-mkr2\\pr-1\\lab6_kpz\\classlibrary2\\handlers\\sufficientfundshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\sufficientfundshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|c:\\users\\admin\\desktop\\university\\2\\kpz-mkr2\\pr-1\\lab6_kpz\\classlibrary2\\handlers\\transferhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\transferhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|c:\\users\\admin\\desktop\\university\\2\\kpz-mkr2\\pr-1\\lab6_kpz\\classlibrary2\\handlers\\transferlimithandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\transferlimithandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|c:\\users\\admin\\desktop\\university\\2\\kpz-mkr2\\pr-1\\lab6_kpz\\classlibrary2\\handlers\\withdrawhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\withdrawhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|c:\\users\\admin\\desktop\\university\\2\\kpz-mkr2\\pr-1\\lab6_kpz\\classlibrary2\\handlers\\withdrawlimithandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\withdrawlimithandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|c:\\users\\admin\\desktop\\university\\2\\kpz-mkr2\\pr-1\\lab6_kpz\\windowsformsapp\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\windowsformsapp\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\classlibrary2\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\windowsformsapp\\transactionhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\transactionhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\windowsformsapp\\authorizationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\authorizationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\windowsformsapp\\authorizationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\authorizationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\classlibrary2\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\classlibrary2\\amountvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\amountvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\classlibrary2\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|d:\\kpz_refactoring\\lab6_kpz-andrew\\classlibrary2\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\classlibrary2\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\amountvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\amountvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\automatedtellermachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\automatedtellermachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\automatedtellermachineeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\automatedtellermachineeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\handlers\\withdrawlimithandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\withdrawlimithandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\extensions\\sqldatareaderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\extensions\\sqldatareaderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\automatedtellermachineform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\automatedtellermachineform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\authorizationform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\authorizationform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\accountmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\accountmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\transactionhistoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\transactionhistoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\accounteventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\accounteventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\accountbalanceeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\accountbalanceeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\interfaces\\iupdatableaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\interfaces\\iupdatableaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\interfaces\\ireadableaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\interfaces\\ireadableaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\interfaces\\ideletableaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\interfaces\\ideletableaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\interfaces\\icreatableaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\interfaces\\icreatableaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\handlers\\withdrawhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\withdrawhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\handlers\\transferlimithandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\transferlimithandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\handlers\\transferhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\transferhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\handlers\\sufficientfundshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\sufficientfundshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\handlers\\sufficientbalancehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\sufficientbalancehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\handlers\\receiverexistshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\receiverexistshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\handlers\\positiveamounthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\positiveamounthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\classlibrary2\\handlers\\handlerresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10942EF4-E8A6-4112-9A0B-0865EDFA693E}|ClassLibrary2\\ClassLibrary2.csproj|solutionrelative:classlibrary2\\handlers\\handlerresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\transactionhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\transactionhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\authorizationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\authorizationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\authorizationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\authorizationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\automatedtellermachineform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\windowsformsapp\\transactionhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|D:\\kpz_refactoring\\lab6_kpz-Andrew\\windowsformsapp\\transactionhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\transactionhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\windowsformsapp\\transactionhistoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454C48E7-F6EA-44B5-BD4A-38908CD266C9}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\transactionhistoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -110,198 +170,415 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReceiverExistsHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\ReceiverExistsHandler.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\ReceiverExistsHandler.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\ReceiverExistsHandler.cs",
-              "RelativeToolTip": "ClassLibrary2\\Handlers\\ReceiverExistsHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:32:07.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PositiveAmountHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\PositiveAmountHandler.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\PositiveAmountHandler.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\PositiveAmountHandler.cs",
-              "RelativeToolTip": "ClassLibrary2\\Handlers\\PositiveAmountHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:31:45.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HandlerResult.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\HandlerResult.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\HandlerResult.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\HandlerResult.cs",
-              "RelativeToolTip": "ClassLibrary2\\Handlers\\HandlerResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:30:06.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AutomatedTellerMachineForm.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\AutomatedTellerMachineForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp\\AutomatedTellerMachineForm.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\AutomatedTellerMachineForm.cs",
-              "RelativeToolTip": "WindowsFormsApp\\AutomatedTellerMachineForm.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAwwFkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T19:52:36.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SufficientBalanceHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\SufficientBalanceHandler.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\SufficientBalanceHandler.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\SufficientBalanceHandler.cs",
-              "RelativeToolTip": "ClassLibrary2\\Handlers\\SufficientBalanceHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:31:56.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SufficientFundsHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\SufficientFundsHandler.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\SufficientFundsHandler.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\SufficientFundsHandler.cs",
-              "RelativeToolTip": "ClassLibrary2\\Handlers\\SufficientFundsHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:32:18.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TransferHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\TransferHandler.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\TransferHandler.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\TransferHandler.cs",
-              "RelativeToolTip": "ClassLibrary2\\Handlers\\TransferHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:30:55.953Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "TransferLimitHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\TransferLimitHandler.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\TransferLimitHandler.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\TransferLimitHandler.cs",
-              "RelativeToolTip": "ClassLibrary2\\Handlers\\TransferLimitHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:32:29.581Z",
-              "EditorCaption": ""
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\App.config",
+              "RelativeDocumentMoniker": "WindowsFormsApp\\App.config",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\App.config",
+              "RelativeToolTip": "WindowsFormsApp\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-23T11:54:24.876Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "WithdrawHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\WithdrawHandler.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\WithdrawHandler.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\WithdrawHandler.cs",
-              "RelativeToolTip": "ClassLibrary2\\Handlers\\WithdrawHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\Program.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp\\Program.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\Program.cs",
+              "RelativeToolTip": "WindowsFormsApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:30:37.506Z",
+              "WhenOpened": "2025-05-23T11:31:08.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Account.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Account.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Account.cs",
+              "RelativeToolTip": "ClassLibrary2\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T20:54:03.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Bank.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Bank.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Bank.cs",
+              "RelativeToolTip": "ClassLibrary2\\Bank.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:30:43.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AmountValidator.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\AmountValidator.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\AmountValidator.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\AmountValidator.cs",
+              "RelativeToolTip": "ClassLibrary2\\AmountValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T20:28:59.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Transaction.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Transaction.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Transaction.cs",
+              "RelativeToolTip": "ClassLibrary2\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T20:56:10.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AutomatedTellerMachineEventArgs.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\AutomatedTellerMachineEventArgs.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\AutomatedTellerMachineEventArgs.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\AutomatedTellerMachineEventArgs.cs",
+              "RelativeToolTip": "ClassLibrary2\\AutomatedTellerMachineEventArgs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:30:33.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AutomatedTellerMachine.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\AutomatedTellerMachine.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\AutomatedTellerMachine.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\AutomatedTellerMachine.cs",
+              "RelativeToolTip": "ClassLibrary2\\AutomatedTellerMachine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:30:27.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\AccountRepository.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\AccountRepository.cs*",
+              "RelativeToolTip": "ClassLibrary2\\AccountRepository.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T18:36:59.732Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "WithdrawLimitHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\WithdrawLimitHandler.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\WithdrawLimitHandler.cs",
               "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\WithdrawLimitHandler.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Handlers\\WithdrawLimitHandler.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\WithdrawLimitHandler.cs",
               "RelativeToolTip": "ClassLibrary2\\Handlers\\WithdrawLimitHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:32:26.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AccountManagementForm.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\AccountManagementForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp\\AccountManagementForm.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\AccountManagementForm.cs",
-              "RelativeToolTip": "WindowsFormsApp\\AccountManagementForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T22:36:23.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T07:32:26.942Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "SessionManager.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\SessionManager.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\SessionManager.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\SessionManager.cs",
-              "RelativeToolTip": "ClassLibrary2\\SessionManager.cs",
+              "Title": "AuthorizationForm.Designer.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AuthorizationForm.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp\\AuthorizationForm.Designer.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AuthorizationForm.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp\\AuthorizationForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:31:50.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AutomatedTellerMachineForm.Designer.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AutomatedTellerMachineForm.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp\\AutomatedTellerMachineForm.Designer.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AutomatedTellerMachineForm.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp\\AutomatedTellerMachineForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:31:53.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SqlDataReaderExtensions.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Extensions\\SqlDataReaderExtensions.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Extensions\\SqlDataReaderExtensions.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Extensions\\SqlDataReaderExtensions.cs",
+              "RelativeToolTip": "ClassLibrary2\\Extensions\\SqlDataReaderExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:47:19.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountManagementForm.Designer.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AccountManagementForm.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp\\AccountManagementForm.Designer.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AccountManagementForm.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp\\AccountManagementForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQBAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:31:37.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AccountEventArgs.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\AccountEventArgs.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\AccountEventArgs.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\AccountEventArgs.cs",
+              "RelativeToolTip": "ClassLibrary2\\AccountEventArgs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:30:00.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SessionManager.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\SessionManager.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\SessionManager.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\SessionManager.cs",
+              "RelativeToolTip": "ClassLibrary2\\SessionManager.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA6wDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T22:07:41.131Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Account.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\Account.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Account.cs",
-              "RelativeToolTip": "ClassLibrary2\\Account.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "AccountManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AccountManagementForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp\\AccountManagementForm.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AccountManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "WindowsFormsApp\\AccountManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:54:03.039Z"
+              "WhenOpened": "2025-05-07T10:27:43.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TransactionHistoryForm.Designer.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\TransactionHistoryForm.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp\\TransactionHistoryForm.Designer.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\TransactionHistoryForm.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp\\TransactionHistoryForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:56:43.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AccountBalanceEventArgs.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\AccountBalanceEventArgs.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\AccountBalanceEventArgs.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\AccountBalanceEventArgs.cs",
+              "RelativeToolTip": "ClassLibrary2\\AccountBalanceEventArgs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:29:48.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IUpdatableAccount.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Interfaces\\IUpdatableAccount.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Interfaces\\IUpdatableAccount.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Interfaces\\IUpdatableAccount.cs",
+              "RelativeToolTip": "ClassLibrary2\\Interfaces\\IUpdatableAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:29:29.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IReadableAccount.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Interfaces\\IReadableAccount.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Interfaces\\IReadableAccount.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Interfaces\\IReadableAccount.cs",
+              "RelativeToolTip": "ClassLibrary2\\Interfaces\\IReadableAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:29:21.975Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Transaction.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\Transaction.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\Transaction.cs",
-              "RelativeToolTip": "ClassLibrary2\\Transaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IDeletableAccount.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Interfaces\\IDeletableAccount.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Interfaces\\IDeletableAccount.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Interfaces\\IDeletableAccount.cs",
+              "RelativeToolTip": "ClassLibrary2\\Interfaces\\IDeletableAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:56:10.913Z"
+              "WhenOpened": "2025-05-23T11:29:14.659Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
+              "Title": "ICreatableAccount.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Interfaces\\ICreatableAccount.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Interfaces\\ICreatableAccount.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Interfaces\\ICreatableAccount.cs",
+              "RelativeToolTip": "ClassLibrary2\\Interfaces\\ICreatableAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:29:07.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ReceiverExistsHandler.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\ReceiverExistsHandler.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\ReceiverExistsHandler.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\ReceiverExistsHandler.cs",
+              "RelativeToolTip": "ClassLibrary2\\Handlers\\ReceiverExistsHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T07:32:07.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SufficientBalanceHandler.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\SufficientBalanceHandler.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\SufficientBalanceHandler.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\SufficientBalanceHandler.cs",
+              "RelativeToolTip": "ClassLibrary2\\Handlers\\SufficientBalanceHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T07:31:56.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SufficientFundsHandler.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\SufficientFundsHandler.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\SufficientFundsHandler.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\SufficientFundsHandler.cs",
+              "RelativeToolTip": "ClassLibrary2\\Handlers\\SufficientFundsHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T07:32:18.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TransferHandler.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\TransferHandler.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\TransferHandler.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\TransferHandler.cs",
+              "RelativeToolTip": "ClassLibrary2\\Handlers\\TransferHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T07:30:55.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TransferLimitHandler.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\TransferLimitHandler.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\TransferLimitHandler.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\TransferLimitHandler.cs",
+              "RelativeToolTip": "ClassLibrary2\\Handlers\\TransferLimitHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T07:32:29.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "WithdrawHandler.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\WithdrawHandler.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\WithdrawHandler.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\WithdrawHandler.cs",
+              "RelativeToolTip": "ClassLibrary2\\Handlers\\WithdrawHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T07:30:37.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PositiveAmountHandler.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\PositiveAmountHandler.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\PositiveAmountHandler.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\PositiveAmountHandler.cs",
+              "RelativeToolTip": "ClassLibrary2\\Handlers\\PositiveAmountHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T07:31:45.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HandlerResult.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\HandlerResult.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Handlers\\HandlerResult.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\ClassLibrary2\\Handlers\\HandlerResult.cs",
+              "RelativeToolTip": "ClassLibrary2\\Handlers\\HandlerResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T07:30:06.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AutomatedTellerMachineForm.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AutomatedTellerMachineForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp\\AutomatedTellerMachineForm.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AutomatedTellerMachineForm.cs",
+              "RelativeToolTip": "WindowsFormsApp\\AutomatedTellerMachineForm.cs",
+              "ViewState": "AgIAANsAAAAAAAAAAAAqwGcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:52:36.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AccountManagementForm.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AccountManagementForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp\\AccountManagementForm.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AccountManagementForm.cs",
+              "RelativeToolTip": "WindowsFormsApp\\AccountManagementForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T22:36:23.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "RegisterForm.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\RegisterForm.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\RegisterForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp\\RegisterForm.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\RegisterForm.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\RegisterForm.cs",
               "RelativeToolTip": "WindowsFormsApp\\RegisterForm.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -309,46 +586,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 34,
               "Title": "RegisterForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\RegisterForm.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\RegisterForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp\\RegisterForm.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\RegisterForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\RegisterForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T20:36:04.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AmountValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\AmountValidator.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\AmountValidator.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\AmountValidator.cs",
-              "RelativeToolTip": "ClassLibrary2\\AmountValidator.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwA0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:28:59.131Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AutomatedTellerMachineForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\AutomatedTellerMachineForm.cs",
+              "DocumentIndex": 38,
+              "Title": "AutomatedTellerMachineForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AutomatedTellerMachineForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp\\AutomatedTellerMachineForm.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\AutomatedTellerMachineForm.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp\\AutomatedTellerMachineForm.cs [Design]",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AutomatedTellerMachineForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "WindowsFormsApp\\AutomatedTellerMachineForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T19:52:35.95Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-06T19:52:35.95Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 36,
               "Title": "AuthorizationForm.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\AuthorizationForm.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AuthorizationForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp\\AuthorizationForm.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\AuthorizationForm.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AuthorizationForm.cs",
               "RelativeToolTip": "WindowsFormsApp\\AuthorizationForm.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -356,45 +619,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 37,
               "Title": "AuthorizationForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\AuthorizationForm.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\AuthorizationForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp\\AuthorizationForm.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AuthorizationForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AuthorizationForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T10:59:03.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AccountRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\AccountRepository.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\AccountRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\ClassLibrary2\\AccountRepository.cs",
-              "RelativeToolTip": "ClassLibrary2\\AccountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T18:36:59.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AccountManagementForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\AccountManagementForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp\\AccountManagementForm.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AccountManagementForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\AccountManagementForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T10:27:43.917Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 39,
               "Title": "TransactionHistoryForm.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\TransactionHistoryForm.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\TransactionHistoryForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp\\TransactionHistoryForm.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\TransactionHistoryForm.cs",
+              "ToolTip": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\TransactionHistoryForm.cs",
               "RelativeToolTip": "WindowsFormsApp\\TransactionHistoryForm.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAuwB0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -402,26 +641,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 35,
               "Title": "TransactionHistoryForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\TransactionHistoryForm.cs",
+              "DocumentMoniker": "D:\\kpz_refactoring\\lab6_kpz-Andrew\\WindowsFormsApp\\TransactionHistoryForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp\\TransactionHistoryForm.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\TransactionHistoryForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\user\\OneDrive\\Desktop\\ATM\\WindowsFormsApp\\TransactionHistoryForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T19:49:46.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "TransactionHistoryForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\TransactionHistoryForm.Designer.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp\\TransactionHistoryForm.Designer.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\University\\2\\KPZ-MKR2\\PR-1\\lab6_kpz\\WindowsFormsApp\\TransactionHistoryForm.Designer.cs",
-              "RelativeToolTip": "WindowsFormsApp\\TransactionHistoryForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T19:56:43.729Z"
             }
           ]
         }

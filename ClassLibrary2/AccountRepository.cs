@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.SqlClient;
+using ClassLibrary2.Extensions;
 using ClassLibrary2.Interfaces;
-using System.Security.Principal;
-using System.IO;
 
 namespace ClassLibrary2
 {
@@ -19,23 +15,15 @@ namespace ClassLibrary2
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                var command = new SqlCommand("SELECT * FROM Accounts WHERE CardNumber = @cardNumber AND CardPIN = @cardPIN", connection);
-                command.Parameters.AddWithValue("@cardNumber", cardNumber);
-                command.Parameters.AddWithValue("@cardPIN", cardPIN);
-
-                using (var reader = command.ExecuteReader())
+                using (var command = new SqlCommand("SELECT * FROM Accounts WHERE CardNumber = @cardNumber AND CardPIN = @cardPIN", connection))
                 {
-                    if (reader.Read())
+                    command.Parameters.AddWithValue("@cardNumber", cardNumber);
+                    command.Parameters.AddWithValue("@cardPIN", cardPIN);
+
+                    using (var reader = command.ExecuteReader())
                     {
-                        return new Account(
-                            reader["CardNumber"].ToString(),
-                            reader["CardPIN"].ToString(),
-                            reader["FirstName"].ToString(),
-                            reader["LastName"].ToString(),
-                            reader["Email"].ToString(),
-                            reader["Phone"].ToString(),
-                            Convert.ToDouble(reader["Balance"])
-                        );
+                        if (reader.Read())
+                            return MapReaderToAccount(reader);
                     }
                 }
             }
@@ -47,40 +35,21 @@ namespace ClassLibrary2
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                var command = new SqlCommand("SELECT * FROM Accounts WHERE CardNumber = @cardNumber", connection);
-                command.Parameters.AddWithValue("@cardNumber", cardNumber);
-
-                using (var reader = command.ExecuteReader())
+                using (var command = new SqlCommand(
+                    "SELECT * FROM Accounts WHERE CardNumber = @cardNumber", connection))
                 {
-                    if (reader.Read())
+                    command.Parameters.AddWithValue("@cardNumber", cardNumber);
+
+                    using (var reader = command.ExecuteReader())
                     {
-                        var account = new Account(
-                            reader["CardNumber"].ToString(),
-                            reader["CardPIN"].ToString(),
-                            reader["FirstName"].ToString(),
-                            reader["LastName"].ToString(),
-                            reader["Email"].ToString(),
-                            reader["Phone"].ToString(),
-                            Convert.ToDouble(reader["Balance"])
-                        );
-
-                        account.FailedLoginAttempts = reader["FailedLoginAttempts"] != DBNull.Value
-                        ? Convert.ToInt32(reader["FailedLoginAttempts"])
-                        : 0;
-
-                        account.IsLocked = reader["IsLocked"] != DBNull.Value
-                        ? Convert.ToBoolean(reader["IsLocked"])
-                        : false;
-                        account.LockTime = reader["LockTime"] != DBNull.Value
-                            ? Convert.ToDateTime(reader["LockTime"])
-                            : (DateTime?)null;
-
-                        return account;
+                        if (reader.Read())
+                            return MapReaderToAccount(reader);
                     }
                 }
             }
             return null;
         }
+
         public bool AddAccount(Account account)
         {
             using (var connection = new SqlConnection(connectionString))
@@ -189,5 +158,22 @@ namespace ClassLibrary2
             }
         }
 
+        private Account MapReaderToAccount(SqlDataReader reader)
+        {
+            var acc = new Account(
+                reader["CardNumber"].ToString(),
+                reader["CardPIN"].ToString(),
+                reader["FirstName"].ToString(),
+                reader["LastName"].ToString(),
+                reader["Email"].ToString(),
+                reader["Phone"].ToString(),
+                Convert.ToDouble(reader["Balance"])
+            );
+
+            acc.FailedLoginAttempts = reader.GetSafeInt("FailedLoginAttempts");
+            acc.IsLocked = reader.GetSafeBool("IsLocked");
+            acc.LockTime = reader.GetSafeDateTimeNullable("LockTime");
+            return acc;
+        }
     }
 }
