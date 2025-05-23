@@ -1,1 +1,75 @@
-**/obj/**
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Visual Studio Code settings
+.vscode/
+
+# Rider settings
+.idea/
+*.sln.iml
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Paket dependency manager
+.paket/
+paket-files/
+
+# DotCover
+.idea/.dotCover
+
+# JetBrains Rider
+*.sln.ide
+
+# Azure Functions
+local.settings.json
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Windows shortcuts
+*.lnk
+
+# NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Others
+*.vs/
+*.tmp
+*.log
+*.bak
+*.swp
+*.swo
+*.DS_Store
