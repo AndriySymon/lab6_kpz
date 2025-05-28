@@ -21,10 +21,12 @@ namespace WindowsFormsApp
         private Account currentAccount;
 
         private readonly AccountRepository _repository;
+        private readonly TransactionService _transactionService;
 
         private double pendingDepositAmount = 0.0;
         private bool awaitingCash = false;
 
+        private SessionManager sessionManager;
 
         public AutomatedTellerMachineForm( Account account, AccountRepository repository)
         {
@@ -34,6 +36,7 @@ namespace WindowsFormsApp
 
             this.account = account;
             this._repository = repository;
+            this._transactionService = new TransactionService(repository);
 
             account.CheckedBalance += OnCheckedBalance;
             account.Added += OnMoneyAdded;
@@ -43,7 +46,6 @@ namespace WindowsFormsApp
             accountRepository = new AccountRepository();
         }
 
-        private SessionManager sessionManager;
         private void AutomatedTellerMachineForm_Load(object sender, EventArgs e)
         {
             this.KeyPreview = true;
@@ -95,101 +97,37 @@ namespace WindowsFormsApp
             }
 
             IReadableAccount readableRepo = new AccountRepository();
-            IUpdatableAccount updatableRepo = new AccountRepository();
-
             Account targetAccount = readableRepo.GetAccountByCardNumber(targetCardNumber);
 
-            var handler1 = new ReceiverExistsHandler();
-            var handler2 = new SufficientFundsHandler();
-            var handler3 = new TransferLimitHandler();
-
-            handler1.SetNext(handler2);
-            handler2.SetNext(handler3);
-
-            var result = handler1.Handle(account, targetAccount, transferAmount);
-
-            if (!result.Success)
+            if (_transactionService.Transfer(account, targetAccount, transferAmount))
             {
-                MessageBox.Show(result.ErrorMessage);
-                return;
-            }
-
-            account.Balance -= transferAmount;
-            targetAccount.Balance += transferAmount;
-
-            bool senderUpdated = updatableRepo.UpdateAccount(account);
-            bool receiverUpdated = updatableRepo.UpdateAccount(targetAccount);
-
-            if (senderUpdated && receiverUpdated)
-            {
-                _repository.AddTransaction(new Transaction
-                {
-                    CardNumber = account.CardNumber,
-                    Type = "TransferOut",
-                    Amount = transferAmount,
-                    Timestamp = DateTime.Now
-                });
-
-                _repository.AddTransaction(new Transaction
-                {
-                    CardNumber = targetAccount.CardNumber,
-                    Type = "TransferIn",
-                    Amount = transferAmount,
-                    Timestamp = DateTime.Now
-                });
-
                 MessageBox.Show("Переказ успішно виконано!");
                 txtTransferAmount.Clear();
                 txtTransferCardNumber.Clear();
             }
             else
             {
-                MessageBox.Show("Помилка при оновленні акаунтів.");
+                MessageBox.Show("Помилка при виконанні переказу.");
             }
         }
-
-
 
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
             ResetInactivityTimer();
-            if (double.TryParse(txtWithdrawAmount.Text, out double withdrawAmount))
+            if (!double.TryParse(txtWithdrawAmount.Text, out double withdrawAmount))
             {
-                var validator = new AmountValidator();
-                if (validator.IsValid(withdrawAmount, account.Balance, out string errorMessage))
-                {
-                    account.Balance -= withdrawAmount;
+                MessageBox.Show("Введіть коректну суму.");
+                return;
+            }
 
-                    AccountRepository repo = new AccountRepository();
-                    bool updated = repo.UpdateAccount(account);
-
-                    if (updated)
-                    {
-                        var transaction = new Transaction
-                        {
-                            CardNumber = account.CardNumber,
-                            Type = "Withdraw",
-                            Amount = withdrawAmount,
-                            Timestamp = DateTime.Now
-                        };
-                        repo.AddTransaction(transaction);
-
-                        MessageBox.Show($"Готівку знято. Новий баланс: {account.Balance:0.00}");
-                        txtWithdrawAmount.Clear();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Помилка при оновленні балансу.");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show(errorMessage);
-                }
+            if (_transactionService.Withdraw(account, withdrawAmount))
+            {
+                MessageBox.Show($"Готівку знято. Новий баланс: {account.Balance:0.00}");
+                txtWithdrawAmount.Clear();
             }
             else
             {
-                MessageBox.Show("Введіть коректну суму.");
+                MessageBox.Show("Помилка при знятті коштів.");
             }
         }
 
@@ -308,6 +246,88 @@ namespace WindowsFormsApp
             ResetInactivityTimer();
             var historyForm = new TransactionHistoryForm(currentAccount, accountRepository);
             historyForm.ShowDialog();
+        }
+    }
+
+    public class TransactionService
+    {
+        private readonly AccountRepository _repository;
+
+        public TransactionService(AccountRepository repository)
+        {
+            _repository = repository;
+        }
+
+        public bool Transfer(Account sender, Account receiver, double amount)
+        {
+            var handler1 = new ReceiverExistsHandler();
+            var handler2 = new SufficientFundsHandler();
+            var handler3 = new TransferLimitHandler();
+
+            handler1.SetNext(handler2);
+            handler2.SetNext(handler3);
+
+            var result = handler1.Handle(sender, receiver, amount);
+
+            if (!result.Success)
+            {
+                return false;
+            }
+
+            sender.Balance -= amount;
+            receiver.Balance += amount;
+
+            bool senderUpdated = _repository.UpdateAccount(sender);
+            bool receiverUpdated = _repository.UpdateAccount(receiver);
+
+            if (senderUpdated && receiverUpdated)
+            {
+                _repository.AddTransaction(new Transaction
+                {
+                    CardNumber = sender.CardNumber,
+                    Type = "TransferOut",
+                    Amount = amount,
+                    Timestamp = DateTime.Now
+                });
+
+                _repository.AddTransaction(new Transaction
+                {
+                    CardNumber = receiver.CardNumber,
+                    Type = "TransferIn",
+                    Amount = amount,
+                    Timestamp = DateTime.Now
+                });
+
+                return true;
+            }
+
+            return false;
+        }
+
+        public bool Withdraw(Account account, double amount)
+        {
+            var validator = new AmountValidator();
+            if (!validator.IsValid(amount, account.Balance, out _))
+            {
+                return false;
+            }
+
+            account.Balance -= amount;
+            bool updated = _repository.UpdateAccount(account);
+
+            if (updated)
+            {
+                _repository.AddTransaction(new Transaction
+                {
+                    CardNumber = account.CardNumber,
+                    Type = "Withdraw",
+                    Amount = amount,
+                    Timestamp = DateTime.Now
+                });
+                return true;
+            }
+
+            return false;
         }
     }
 }
